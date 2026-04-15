@@ -1,0 +1,916 @@
+.TH "EASY-CPP.h" 3 "EASY-CPP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+EASY-CPP.h
+.SH SYNOPSIS
+.br
+.PP
+\fR#include <iostream>\fP
+.br
+\fR#include <fstream>\fP
+.br
+\fR#include <string>\fP
+.br
+\fR#include <vector>\fP
+.br
+\fR#include <map>\fP
+.br
+\fR#include <unordered_map>\fP
+.br
+\fR#include <sstream>\fP
+.br
+\fR#include <iomanip>\fP
+.br
+\fR#include <algorithm>\fP
+.br
+\fR#include <cmath>\fP
+.br
+\fR#include <chrono>\fP
+.br
+\fR#include <random>\fP
+.br
+\fR#include <thread>\fP
+.br
+\fR#include <cstdlib>\fP
+.br
+\fR#include <ctime>\fP
+.br
+\fR#include <string_view>\fP
+.br
+\fR#include <optional>\fP
+.br
+\fR#include <filesystem>\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBStopwatch\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "char \fBto_lower\fP (char c) noexcept"
+.br
+.ti -1c
+.RI "string \fBto_lower\fP (string str)"
+.br
+.ti -1c
+.RI "template<typename\&.\&.\&. Args> void \fBprint\fP (const Args &\&.\&.\&. args) noexcept"
+.br
+.ti -1c
+.RI "template<typename\&.\&.\&. Args> void \fBprintln\fP (const Args &\&.\&.\&. args) noexcept"
+.br
+.ti -1c
+.RI "void \fBprint\fP (const string &s) noexcept"
+.br
+.ti -1c
+.RI "void \fBprint\fP (const char *s) noexcept"
+.br
+.ti -1c
+.RI "void \fBprint\fP (char c) noexcept"
+.br
+.ti -1c
+.RI "void \fBprint\fP (int n) noexcept"
+.br
+.ti -1c
+.RI "void \fBprint\fP (float n) noexcept"
+.br
+.ti -1c
+.RI "void \fBprint\fP (double n) noexcept"
+.br
+.ti -1c
+.RI "void \fBprint\fP (long int n) noexcept"
+.br
+.ti -1c
+.RI "void \fBprint\fP (bool b) noexcept"
+.br
+.ti -1c
+.RI "void \fBinput\fP (string &s)"
+.br
+.ti -1c
+.RI "void \fBinput\fP (int &n)"
+.br
+.ti -1c
+.RI "void \fBinput\fP (float &n)"
+.br
+.ti -1c
+.RI "void \fBinput\fP (double &n)"
+.br
+.ti -1c
+.RI "void \fBinput\fP (char &c)"
+.br
+.ti -1c
+.RI "void \fBinput\fP (long int &n)"
+.br
+.ti -1c
+.RI "void \fBinput\fP (bool &b)"
+.br
+.ti -1c
+.RI "string \fBinput_str\fP (string prompt='')"
+.br
+.ti -1c
+.RI "int \fBinput_int\fP (string prompt='')"
+.br
+.ti -1c
+.RI "float \fBinput_float\fP (string prompt='')"
+.br
+.ti -1c
+.RI "double \fBinput_double\fP (string prompt='')"
+.br
+.ti -1c
+.RI "bool \fBinput_bool\fP (string prompt='')"
+.br
+.ti -1c
+.RI "template<typename T, size_t N> void \fBprint\fP (T(&arr)[N])"
+.br
+.ti -1c
+.RI "template<typename T> void \fBprint\fP (const vector< T > &v)"
+.br
+.ti -1c
+.RI "template<typename T, size_t N> void \fBinput\fP (T(&arr)[N])"
+.br
+.ti -1c
+.RI "template<typename T> void \fBinput\fP (vector< T > &v)"
+.br
+.ti -1c
+.RI "void \fBwrite_file\fP (string filename, string mode='out')"
+.br
+.ti -1c
+.RI "void \fBread_file\fP (string filename)"
+.br
+.ti -1c
+.RI "void \fBappend_file\fP (string filename, const string &content)"
+.br
+.ti -1c
+.RI "string \fBread_file_as_string\fP (const string &filename)"
+.br
+.ti -1c
+.RI "void \fBwrite_lines\fP (const string &filename, const vector< string > &lines)"
+.br
+.ti -1c
+.RI "vector< string > \fBread_lines\fP (const string &filename)"
+.br
+.ti -1c
+.RI "string \fBget_filename\fP (string_view path)"
+.br
+.ti -1c
+.RI "string \fBget_extension\fP (string_view path)"
+.br
+.ti -1c
+.RI "string \fBget_parent_path\fP (string_view path)"
+.br
+.ti -1c
+.RI "string \fBget_stem\fP (string_view path)"
+.br
+.ti -1c
+.RI "string \fBget_env\fP (const string &name)"
+.br
+.ti -1c
+.RI "void \fBset_env\fP (const string &name, const string &value)"
+.br
+.ti -1c
+.RI "template<typename T> T \fBmin_val\fP (T a, T b) noexcept"
+.br
+.ti -1c
+.RI "template<typename T> T \fBmax_val\fP (T a, T b) noexcept"
+.br
+.ti -1c
+.RI "template<typename T> T \fBclamp\fP (T val, T minv, T maxv) noexcept"
+.br
+.ti -1c
+.RI "double \fBpow_val\fP (double base, double exp) noexcept"
+.br
+.ti -1c
+.RI "double \fBsqrt_val\fP (double x) noexcept"
+.br
+.ti -1c
+.RI "double \fBcbrt_val\fP (double x) noexcept"
+.br
+.ti -1c
+.RI "double \fBlerp\fP (double a, double b, double t) noexcept"
+.br
+.ti -1c
+.RI "int \fBfactorial\fP (int n)"
+.br
+.ti -1c
+.RI "int \fBfibonacci\fP (int n)"
+.br
+.ti -1c
+.RI "bool \fBis_even\fP (int n) noexcept"
+.br
+.ti -1c
+.RI "bool \fBis_odd\fP (int n) noexcept"
+.br
+.ti -1c
+.RI "double \fBto_radians\fP (double deg) noexcept"
+.br
+.ti -1c
+.RI "double \fBto_degrees\fP (double rad) noexcept"
+.br
+.ti -1c
+.RI "bool \fBstarts_with\fP (string_view str, string_view prefix) noexcept"
+.br
+.ti -1c
+.RI "bool \fBends_with\fP (string_view str, string_view suffix) noexcept"
+.br
+.ti -1c
+.RI "bool \fBcontains\fP (string_view str, string_view substr) noexcept"
+.br
+.ti -1c
+.RI "string \fBreplace\fP (string_view str, string_view from, string_view to)"
+.br
+.ti -1c
+.RI "string \fBreplace_all\fP (string_view str, string_view from, string_view to)"
+.br
+.ti -1c
+.RI "string \fBto_upper\fP (string str)"
+.br
+.ti -1c
+.RI "string \fBcapitalize\fP (string str)"
+.br
+.ti -1c
+.RI "string \fBtrim\fP (string_view str)"
+.br
+.ti -1c
+.RI "string \fBltrim\fP (string_view str)"
+.br
+.ti -1c
+.RI "string \fBrtrim\fP (string_view str)"
+.br
+.ti -1c
+.RI "vector< string > \fBsplit\fP (string_view str, char delimiter=' ')"
+.br
+.ti -1c
+.RI "string \fBjoin\fP (const vector< string > &vec, string_view delimiter=' ')"
+.br
+.ti -1c
+.RI "string \fBrepeat\fP (string_view str, int times)"
+.br
+.ti -1c
+.RI "template<typename T> T \fBsum\fP (const vector< T > &v)"
+.br
+.ti -1c
+.RI "template<typename T> double \fBaverage\fP (const vector< T > &v)"
+.br
+.ti -1c
+.RI "template<typename T> T \fBmax_element\fP (const vector< T > &v)"
+.br
+.ti -1c
+.RI "template<typename T> T \fBmin_element\fP (const vector< T > &v)"
+.br
+.ti -1c
+.RI "template<typename T> bool \fBcontains\fP (const vector< T > &v, const T &value)"
+.br
+.ti -1c
+.RI "template<typename T> void \fBsort_vec\fP (vector< T > &v)"
+.br
+.ti -1c
+.RI "template<typename T> void \fBreverse_vec\fP (vector< T > &v)"
+.br
+.ti -1c
+.RI "template<typename T> void \fBclear_vec\fP (vector< T > &v)"
+.br
+.ti -1c
+.RI "template<typename T> void \fBpush_unique\fP (vector< T > &v, const T &value)"
+.br
+.ti -1c
+.RI "template<typename T, typename Predicate> void \fBfilter_vec\fP (vector< T > &v, Predicate pred)"
+.br
+.ti -1c
+.RI "template<typename T, typename Function> void \fBfor_each_vec\fP (vector< T > &v, Function func)"
+.br
+.ti -1c
+.RI "template<typename K, typename V> bool \fBmap_contains\fP (const map< K, V > &m, const K &key) noexcept"
+.br
+.ti -1c
+.RI "template<typename K, typename V> bool \fBmap_contains\fP (const unordered_map< K, V > &m, const K &key) noexcept"
+.br
+.ti -1c
+.RI "template<typename K, typename V> void \fBprint_map\fP (const map< K, V > &m)"
+.br
+.ti -1c
+.RI "template<typename K, typename V> void \fBprint_map\fP (const unordered_map< K, V > &m)"
+.br
+.ti -1c
+.RI "string \fBcurrent_time\fP ()"
+.br
+.ti -1c
+.RI "string \fBcurrent_date\fP ()"
+.br
+.ti -1c
+.RI "long long \fBtimestamp_ms\fP () noexcept"
+.br
+.ti -1c
+.RI "void \fBsleep_ms\fP (int ms) noexcept"
+.br
+.ti -1c
+.RI "void \fBsleep_sec\fP (int sec) noexcept"
+.br
+.ti -1c
+.RI "void \fBcolor_reset\fP () noexcept"
+.br
+.ti -1c
+.RI "void \fBcolor_red\fP () noexcept"
+.br
+.ti -1c
+.RI "void \fBcolor_green\fP () noexcept"
+.br
+.ti -1c
+.RI "void \fBcolor_yellow\fP () noexcept"
+.br
+.ti -1c
+.RI "void \fBcolor_blue\fP () noexcept"
+.br
+.ti -1c
+.RI "void \fBcolor_magenta\fP () noexcept"
+.br
+.ti -1c
+.RI "void \fBcolor_cyan\fP () noexcept"
+.br
+.ti -1c
+.RI "void \fBcolor_bold\fP () noexcept"
+.br
+.ti -1c
+.RI "void \fBcolor_underline\fP () noexcept"
+.br
+.ti -1c
+.RI "void \fBdebug\fP (const string &msg) noexcept"
+.br
+.ti -1c
+.RI "void \fBlog_info\fP (const string &msg) noexcept"
+.br
+.ti -1c
+.RI "void \fBlog_warn\fP (const string &msg) noexcept"
+.br
+.ti -1c
+.RI "void \fBlog_error\fP (const string &msg) noexcept"
+.br
+.ti -1c
+.RI "void \fBassert_true\fP (bool condition, const string &message='Assertion failed')"
+.br
+.ti -1c
+.RI "void \fBclear\fP () noexcept"
+.br
+.ti -1c
+.RI "void \fBpause\fP (string message='Press ENTER to continue\&.\&.\&.') noexcept"
+.br
+.ti -1c
+.RI "void \fBexit_program\fP (int code=0) noexcept"
+.br
+.ti -1c
+.RI "string \fBget_os\fP () noexcept"
+.br
+.ti -1c
+.RI "void \fBrandom_init\fP () noexcept"
+.br
+.ti -1c
+.RI "int \fBrandom_int\fP (int min, int max) noexcept"
+.br
+.ti -1c
+.RI "double \fBrandom_double\fP (double min=0\&.0, double max=1\&.0) noexcept"
+.br
+.ti -1c
+.RI "bool \fBrandom_bool\fP () noexcept"
+.br
+.ti -1c
+.RI "template<typename T> void \fBprint_ptr\fP (const T *ptr) noexcept"
+.br
+.ti -1c
+.RI "template<typename T> bool \fBis_null\fP (const T *ptr) noexcept"
+.br
+.ti -1c
+.RI "template<typename T> string \fBto_str\fP (const T &value)"
+.br
+.ti -1c
+.RI "int \fBto_int\fP (string_view str)"
+.br
+.ti -1c
+.RI "double \fBto_double\fP (string_view str)"
+.br
+.ti -1c
+.RI "bool \fBto_bool\fP (string_view str)"
+.br
+.ti -1c
+.RI "template<typename T> void \fBswap_val\fP (T &a, T &b) noexcept"
+.br
+.ti -1c
+.RI "bool \fBis_prime\fP (int n) noexcept"
+.br
+.ti -1c
+.RI "int \fBgcd\fP (int a, int b) noexcept"
+.br
+.ti -1c
+.RI "int \fBlcm\fP (int a, int b) noexcept"
+.br
+.ti -1c
+.RI "string \fBbase64_encode\fP (const string &data)"
+.br
+.ti -1c
+.RI "string \fBbase64_decode\fP (const string &encoded)"
+.br
+.ti -1c
+.RI "void \fBprogress_bar\fP (int progress, int total=100, int width=50)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "constexpr double \fBPI\fP = 3\&.141592653589793"
+.br
+.ti -1c
+.RI "constexpr double \fBE\fP = 2\&.718281828459045"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "void append_file (string filename, const string & content)"
+
+.PP
+Definition at line \fB347\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "void assert_true (bool condition, const string & message = \fR'Assertion failed'\fP)"
+
+.PP
+Definition at line \fB664\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "template<typename T> double average (const vector< T > & v)\fR [nodiscard]\fP"
+
+.PP
+Definition at line \fB543\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "string base64_decode (const string & encoded)\fR [nodiscard]\fP"
+
+.PP
+Definition at line \fB785\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "string base64_encode (const string & data)\fR [nodiscard]\fP"
+
+.PP
+Definition at line \fB762\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "string capitalize (string str)\fR [nodiscard]\fP"
+
+.PP
+Definition at line \fB478\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "double cbrt_val (double x)\fR [inline]\fP, \fR [nodiscard]\fP, \fR [noexcept]\fP"
+
+.PP
+Definition at line \fB92\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "template<typename T> T clamp (T val, T minv, T maxv)\fR [inline]\fP, \fR [nodiscard]\fP, \fR [noexcept]\fP"
+
+.PP
+Definition at line \fB88\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "void clear ()\fR [noexcept]\fP"
+
+.PP
+Definition at line \fB674\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "template<typename T> void clear_vec (vector< T > & v)"
+
+.PP
+Definition at line \fB573\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "void color_blue ()\fR [inline]\fP, \fR [noexcept]\fP"
+
+.PP
+Definition at line \fB171\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "void color_bold ()\fR [inline]\fP, \fR [noexcept]\fP"
+
+.PP
+Definition at line \fB174\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "void color_cyan ()\fR [inline]\fP, \fR [noexcept]\fP"
+
+.PP
+Definition at line \fB173\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "void color_green ()\fR [inline]\fP, \fR [noexcept]\fP"
+
+.PP
+Definition at line \fB169\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "void color_magenta ()\fR [inline]\fP, \fR [noexcept]\fP"
+
+.PP
+Definition at line \fB172\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "void color_red ()\fR [inline]\fP, \fR [noexcept]\fP"
+
+.PP
+Definition at line \fB168\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "void color_reset ()\fR [inline]\fP, \fR [noexcept]\fP"
+
+.PP
+Definition at line \fB167\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "void color_underline ()\fR [inline]\fP, \fR [noexcept]\fP"
+
+.PP
+Definition at line \fB175\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "void color_yellow ()\fR [inline]\fP, \fR [noexcept]\fP"
+
+.PP
+Definition at line \fB170\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "template<typename T> bool contains (const vector< T > & v, const T & value)\fR [nodiscard]\fP"
+
+.PP
+Definition at line \fB561\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "bool contains (string_view str, string_view substr)\fR [nodiscard]\fP, \fR [noexcept]\fP"
+
+.PP
+Definition at line \fB449\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "string current_date ()\fR [nodiscard]\fP"
+
+.PP
+Definition at line \fB630\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "string current_time ()\fR [nodiscard]\fP"
+
+.PP
+Definition at line \fB621\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "void debug (const string & msg)\fR [noexcept]\fP"
+
+.PP
+Definition at line \fB659\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "bool ends_with (string_view str, string_view suffix)\fR [nodiscard]\fP, \fR [noexcept]\fP"
+
+.PP
+Definition at line \fB443\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "void exit_program (int code = \fR0\fP)\fR [noexcept]\fP"
+
+.PP
+Definition at line \fB682\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "int factorial (int n)\fR [nodiscard]\fP"
+
+.PP
+Definition at line \fB419\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "int fibonacci (int n)\fR [nodiscard]\fP"
+
+.PP
+Definition at line \fB424\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "template<typename T, typename Predicate> void filter_vec (vector< T > & v, Predicate pred)"
+
+.PP
+Definition at line \fB582\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "template<typename T, typename Function> void for_each_vec (vector< T > & v, Function func)"
+
+.PP
+Definition at line \fB588\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "int gcd (int a, int b)\fR [nodiscard]\fP, \fR [noexcept]\fP"
+
+.PP
+Definition at line \fB745\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "string get_env (const string & name)\fR [nodiscard]\fP"
+
+.PP
+Definition at line \fB403\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "string get_extension (string_view path)\fR [nodiscard]\fP"
+
+.PP
+Definition at line \fB383\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "string get_filename (string_view path)\fR [nodiscard]\fP"
+
+.PP
+Definition at line \fB377\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "string get_os ()\fR [nodiscard]\fP, \fR [noexcept]\fP"
+
+.PP
+Definition at line \fB684\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "string get_parent_path (string_view path)\fR [nodiscard]\fP"
+
+.PP
+Definition at line \fB389\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "string get_stem (string_view path)\fR [nodiscard]\fP"
+
+.PP
+Definition at line \fB395\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "void input (bool & b)"
+
+.PP
+Definition at line \fB238\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "void input (char & c)"
+
+.SS "void input (double & n)"
+
+.SS "void input (float & n)"
+
+.SS "void input (int & n)"
+
+.SS "void input (long int & n)"
+
+.SS "void input (string & s)"
+
+.SS "template<typename T, size_t N> void input (T(&) arr[N])"
+
+.PP
+Definition at line \fB306\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "template<typename T> void input (vector< T > & v)"
+
+.PP
+Definition at line \fB314\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "bool input_bool (string prompt = \fR''\fP)\fR [nodiscard]\fP"
+
+.PP
+Definition at line \fB281\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "double input_double (string prompt = \fR''\fP)\fR [nodiscard]\fP"
+
+.PP
+Definition at line \fB272\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "float input_float (string prompt = \fR''\fP)\fR [nodiscard]\fP"
+
+.PP
+Definition at line \fB263\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "int input_int (string prompt = \fR''\fP)\fR [nodiscard]\fP"
+
+.PP
+Definition at line \fB254\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "string input_str (string prompt = \fR''\fP)\fR [nodiscard]\fP"
+
+.PP
+Definition at line \fB246\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "bool is_even (int n)\fR [inline]\fP, \fR [nodiscard]\fP, \fR [noexcept]\fP"
+
+.PP
+Definition at line \fB97\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "template<typename T> bool is_null (const T * ptr)\fR [inline]\fP, \fR [nodiscard]\fP, \fR [noexcept]\fP"
+
+.PP
+Definition at line \fB198\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "bool is_odd (int n)\fR [inline]\fP, \fR [nodiscard]\fP, \fR [noexcept]\fP"
+
+.PP
+Definition at line \fB98\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "bool is_prime (int n)\fR [nodiscard]\fP, \fR [noexcept]\fP"
+
+.PP
+Definition at line \fB735\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "string join (const vector< string > & vec, string_view delimiter = \fR' '\fP)\fR [nodiscard]\fP"
+
+.PP
+Definition at line \fB514\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "int lcm (int a, int b)\fR [nodiscard]\fP, \fR [noexcept]\fP"
+
+.PP
+Definition at line \fB756\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "double lerp (double a, double b, double t)\fR [inline]\fP, \fR [nodiscard]\fP, \fR [noexcept]\fP"
+
+.PP
+Definition at line \fB93\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "void log_error (const string & msg)\fR [noexcept]\fP"
+
+.PP
+Definition at line \fB662\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "void log_info (const string & msg)\fR [noexcept]\fP"
+
+.PP
+Definition at line \fB660\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "void log_warn (const string & msg)\fR [noexcept]\fP"
+
+.PP
+Definition at line \fB661\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "string ltrim (string_view str)\fR [nodiscard]\fP"
+
+.PP
+Definition at line \fB492\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "template<typename K, typename V> bool map_contains (const map< K, V > & m, const K & key)\fR [nodiscard]\fP, \fR [noexcept]\fP"
+
+.PP
+Definition at line \fB595\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "template<typename K, typename V> bool map_contains (const unordered_map< K, V > & m, const K & key)\fR [nodiscard]\fP, \fR [noexcept]\fP"
+
+.PP
+Definition at line \fB601\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "template<typename T> T max_element (const vector< T > & v)\fR [nodiscard]\fP"
+
+.PP
+Definition at line \fB549\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "template<typename T> T max_val (T a, T b)\fR [inline]\fP, \fR [nodiscard]\fP, \fR [noexcept]\fP"
+
+.PP
+Definition at line \fB87\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "template<typename T> T min_element (const vector< T > & v)\fR [nodiscard]\fP"
+
+.PP
+Definition at line \fB555\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "template<typename T> T min_val (T a, T b)\fR [inline]\fP, \fR [nodiscard]\fP, \fR [noexcept]\fP"
+
+.PP
+Definition at line \fB86\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "void pause (string message = \fR'Press ENTER to continue\&.\&.\&.'\fP)\fR [noexcept]\fP"
+
+.PP
+Definition at line \fB676\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "double pow_val (double base, double exp)\fR [inline]\fP, \fR [nodiscard]\fP, \fR [noexcept]\fP"
+
+.PP
+Definition at line \fB90\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "void print (bool b)\fR [noexcept]\fP"
+
+.PP
+Definition at line \fB236\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "void print (char c)\fR [noexcept]\fP"
+
+.PP
+Definition at line \fB231\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "template<typename\&.\&.\&. Args> void print (const Args &\&.\&.\&. args)\fR [noexcept]\fP"
+
+.PP
+Definition at line \fB34\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "void print (const char * s)\fR [noexcept]\fP"
+
+.PP
+Definition at line \fB230\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "void print (const string & s)\fR [noexcept]\fP"
+
+.PP
+Definition at line \fB229\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "template<typename T> void print (const vector< T > & v)"
+
+.PP
+Definition at line \fB299\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "void print (double n)\fR [noexcept]\fP"
+
+.PP
+Definition at line \fB234\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "void print (float n)\fR [noexcept]\fP"
+
+.PP
+Definition at line \fB233\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "void print (int n)\fR [noexcept]\fP"
+
+.PP
+Definition at line \fB232\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "void print (long int n)\fR [noexcept]\fP"
+
+.PP
+Definition at line \fB235\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "template<typename T, size_t N> void print (T(&) arr[N])"
+
+.PP
+Definition at line \fB292\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "template<typename K, typename V> void print_map (const map< K, V > & m)"
+
+.PP
+Definition at line \fB607\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "template<typename K, typename V> void print_map (const unordered_map< K, V > & m)"
+
+.PP
+Definition at line \fB614\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "template<typename T> void print_ptr (const T * ptr)\fR [noexcept]\fP"
+
+.PP
+Definition at line \fB712\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "template<typename\&.\&.\&. Args> void println (const Args &\&.\&.\&. args)\fR [noexcept]\fP"
+
+.PP
+Definition at line \fB35\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "void progress_bar (int progress, int total = \fR100\fP, int width = \fR50\fP)"
+
+.PP
+Definition at line \fB809\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "template<typename T> void push_unique (vector< T > & v, const T & value)"
+
+.PP
+Definition at line \fB576\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "bool random_bool ()\fR [nodiscard]\fP, \fR [noexcept]\fP"
+
+.PP
+Definition at line \fB708\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "double random_double (double min = \fR0\&.0\fP, double max = \fR1\&.0\fP)\fR [nodiscard]\fP, \fR [noexcept]\fP"
+
+.PP
+Definition at line \fB702\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "void random_init ()\fR [noexcept]\fP"
+
+.PP
+Definition at line \fB694\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "int random_int (int min, int max)\fR [nodiscard]\fP, \fR [noexcept]\fP"
+
+.PP
+Definition at line \fB696\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "void read_file (string filename)"
+
+.PP
+Definition at line \fB338\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "string read_file_as_string (const string & filename)\fR [nodiscard]\fP"
+
+.PP
+Definition at line \fB353\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "vector< string > read_lines (const string & filename)\fR [nodiscard]\fP"
+
+.PP
+Definition at line \fB367\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "string repeat (string_view str, int times)\fR [nodiscard]\fP"
+
+.PP
+Definition at line \fB523\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "string replace (string_view str, string_view from, string_view to)\fR [nodiscard]\fP"
+
+.PP
+Definition at line \fB454\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "string replace_all (string_view str, string_view from, string_view to)\fR [nodiscard]\fP"
+
+.PP
+Definition at line \fB466\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "template<typename T> void reverse_vec (vector< T > & v)"
+
+.PP
+Definition at line \fB570\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "string rtrim (string_view str)\fR [nodiscard]\fP"
+
+.PP
+Definition at line \fB498\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "void set_env (const string & name, const string & value)"
+
+.PP
+Definition at line \fB409\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "void sleep_ms (int ms)\fR [inline]\fP, \fR [noexcept]\fP"
+
+.PP
+Definition at line \fB153\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "void sleep_sec (int sec)\fR [inline]\fP, \fR [noexcept]\fP"
+
+.PP
+Definition at line \fB154\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "template<typename T> void sort_vec (vector< T > & v)"
+
+.PP
+Definition at line \fB567\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "vector< string > split (string_view str, char delimiter = \fR' '\fP)\fR [nodiscard]\fP"
+
+.PP
+Definition at line \fB504\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "double sqrt_val (double x)\fR [inline]\fP, \fR [nodiscard]\fP, \fR [noexcept]\fP"
+
+.PP
+Definition at line \fB91\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "bool starts_with (string_view str, string_view prefix)\fR [nodiscard]\fP, \fR [noexcept]\fP"
+
+.PP
+Definition at line \fB438\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "template<typename T> T sum (const vector< T > & v)\fR [nodiscard]\fP"
+
+.PP
+Definition at line \fB535\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "template<typename T> void swap_val (T & a, T & b)\fR [inline]\fP, \fR [noexcept]\fP"
+
+.PP
+Definition at line \fB207\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "long long timestamp_ms ()\fR [nodiscard]\fP, \fR [noexcept]\fP"
+
+.PP
+Definition at line \fB639\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "bool to_bool (string_view str)\fR [nodiscard]\fP"
+
+.PP
+Definition at line \fB728\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "double to_degrees (double rad)\fR [inline]\fP, \fR [nodiscard]\fP, \fR [noexcept]\fP"
+
+.PP
+Definition at line \fB103\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "double to_double (string_view str)\fR [nodiscard]\fP"
+
+.PP
+Definition at line \fB727\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "int to_int (string_view str)\fR [nodiscard]\fP"
+
+.PP
+Definition at line \fB726\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "char to_lower (char c)\fR [inline]\fP, \fR [nodiscard]\fP, \fR [noexcept]\fP"
+
+.PP
+Definition at line \fB30\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "string to_lower (string str)\fR [nodiscard]\fP"
+
+.PP
+Definition at line \fB223\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "double to_radians (double deg)\fR [inline]\fP, \fR [nodiscard]\fP, \fR [noexcept]\fP"
+
+.PP
+Definition at line \fB102\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "template<typename T> string to_str (const T & value)\fR [nodiscard]\fP"
+
+.PP
+Definition at line \fB719\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "string to_upper (string str)\fR [nodiscard]\fP"
+
+.PP
+Definition at line \fB471\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "string trim (string_view str)\fR [nodiscard]\fP"
+
+.PP
+Definition at line \fB484\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "void write_file (string filename, string mode = \fR'out'\fP)"
+
+.PP
+Definition at line \fB322\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "void write_lines (const string & filename, const vector< string > & lines)"
+
+.PP
+Definition at line \fB360\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SH "Variable Documentation"
+.PP 
+.SS "double E = 2\&.718281828459045\fR [constexpr]\fP"
+
+.PP
+Definition at line \fB101\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SS "double PI = 3\&.141592653589793\fR [constexpr]\fP"
+
+.PP
+Definition at line \fB100\fP of file \fBEASY\-CPP\&.h\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for EASY-CPP from the source code\&.

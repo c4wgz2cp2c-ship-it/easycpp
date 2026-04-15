@@ -1,0 +1,12 @@
+digraph "docs/doxygen-awesome-css-2.4.2/docs"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  compound=true
+  subgraph clusterdir_459a61e38d3aac5c1fffce147c030c2c {
+    graph [ bgcolor="#edf0f7", pencolor="grey50", label="doxygen-awesome-css\l-2.4.2", fontname=Helvetica,fontsize=10 style="filled,dashed", URL="dir_459a61e38d3aac5c1fffce147c030c2c.html",tooltip=""]
+  dir_a5d2f1db4965e4aa0956dd492f3565ca [label="docs", fillcolor="#edf0f7", color="grey25", style="filled,bold", URL="dir_a5d2f1db4965e4aa0956dd492f3565ca.html",tooltip=""];
+  }
+}

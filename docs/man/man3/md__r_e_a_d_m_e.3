@@ -1,0 +1,110 @@
+.TH "md__r_e_a_d_m_e" 3 "EASY-CPP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+md__r_e_a_d_m_e \- README 
+.PP
+# EasyCPP - C++ Made Easy 🚀
+
+.PP
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
+.PP
+![Standard: C++17](https://img.shields.io/badge/C%2B%2B-17-blue.svg)
+
+.PP
+![Status: Active](https://img.shields.io/badge/status-active-brightgreen.svg)
+
+.PP
+**124 Python-like utility functions for modern C++\&.** 
+.br
+
+.PP
+Stop writing the same boilerplate over and over\&. \fReasycpp\&.h\fP is a **single-header library** that brings the simplicity of Python to C++ without sacrificing performance\&.
+
+.PP
+## ✨ Why EasyCPP?
+
+.PP
+- **Single Header:** Just drop \fReasycpp\&.h\fP into your project and \fR#include\fP it\&.
+
+.PP
+- **No Dependencies:** Uses only the C++ Standard Library\&.
+
+.PP
+- **Zero Overhead:** \fRconstexpr\fP, \fRnoexcept\fP, and \fR\\[\\[nodiscard]]\fP everywhere\&.
+
+.PP
+- **Readable Code:** Write \fR\fBprint()\fP\fP, \fR\fBinput()\fP\fP, \fR\fBsplit()\fP\fP, \fR\fBtrim()\fP\fP instead of \fRstd::cout << \&.\&.\&. << std::endl;\fP\&.
+
+.PP
+## 🚀 Quick Example
+
+.PP
+```cpp
+
+.PP
+#include "easycpp\&.h"
+
+.PP
+using namespace std;
+
+.PP
+int main() {
+
+.PP
+&#x20; // Clean printing
+
+.PP
+&#x20; println("Hello, ", "World!"); // Supports multiple args
+
+.PP
+&#x20; // Simple input
+
+.PP
+&#x20; string name = input_str("What's your name? ");
+
+.PP
+&#x20; int age = input_int("How old are you? ");
+
+.PP
+&#x20; // String utilities
+
+.PP
+&#x20; string s = "  Hello World  ";
+
+.PP
+&#x20; println(trim(s)); // "Hello World"
+
+.PP
+&#x20; vector<string> words = split(s); // {"Hello", "World"}
+
+.PP
+&#x20; // Vector utilities
+
+.PP
+&#x20; vector<int> nums = {1, 2, 3, 4, 5};
+
+.PP
+&#x20; println("Sum: ", sum(nums)); // 15
+
+.PP
+&#x20; println("Avg: ", average(nums)); // 3\&.0
+
+.PP
+&#x20; // Colored console output
+
+.PP
+&#x20; \fBcolor_red()\fP;
+
+.PP
+&#x20; println("This is red!");
+
+.PP
+&#x20; \fBcolor_reset()\fP;
+
+.PP
+&#x20; return 0;
+
+.PP
+} 

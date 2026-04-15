@@ -1,0 +1,72 @@
+\chapter{README }
+\hypertarget{md__r_e_a_d_m_e}{}\label{md__r_e_a_d_m_e}\index{README@{README}}
+\# Easy\+CPP -\/ C++ Made Easy 🚀
+
+!\+[License:\+ MIT]\+(\href{https://img.shields.io/badge/License-MIT-yellow.svg}{\texttt{https:\+/\+/\+img.\+shields.\+io/\+badge/\+\+License-\/\+MIT-\/yellow.\+svg}})
+
+!\+[Standard:\+ C++17]\+(\href{https://img.shields.io/badge/C\%2B\%2B-17-blue.svg}{\texttt{https:\+/\+/\+img.\+shields.\+io/\+badge/\+\+C\%2\+B\%2\+B-\/17-\/blue.\+svg}})
+
+!\+[Status:\+ Active]\+(\href{https://img.shields.io/badge/status-active-brightgreen.svg}{\texttt{https:\+/\+/\+img.\+shields.\+io/\+badge/\+status-\/active-\/brightgreen.\+svg}})
+
+\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}124 Python-\/like utility functions for modern C++.\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} ~\newline
+
+
+Stop writing the same boilerplate over and over. {\ttfamily easycpp.\+h} is a \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}single-\/header library\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} that brings the simplicity of Python to C++ without sacrificing performance.
+
+\#\# ✨ Why Easy\+CPP?
+
+-\/ \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\+Single Header:\+\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} Just drop {\ttfamily easycpp.\+h} into your project and {\ttfamily \#include} it.
+
+-\/ \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\+No Dependencies:\+\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} Uses only the C++ Standard Library.
+
+-\/ \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\+Zero Overhead:\+\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\ttfamily constexpr}, {\ttfamily noexcept}, and {\ttfamily \textbackslash{}\+[\textbackslash{}\+[nodiscard]\+]\+} everywhere.
+
+-\/ \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\+Readable Code:\+\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} Write {\ttfamily \doxylink{_e_a_s_y-_c_p_p_8h_ab8d5c5cd4eb5ba24e8272897a9b1f1a1}{print()}}, {\ttfamily \doxylink{_e_a_s_y-_c_p_p_8h_a9feb8223c82f994e344445c096c57422}{input()}}, {\ttfamily \doxylink{_e_a_s_y-_c_p_p_8h_aa4dda9bff3cd366b4b50dc4bb1922294}{split()}}, {\ttfamily \doxylink{_e_a_s_y-_c_p_p_8h_af2426daf17040a8668703514a3c9f8a8}{trim()}} instead of {\ttfamily std::\+cout \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} ... \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} std::\+endl;}.
+
+\#\# 🚀 Quick Example
+
+\`{}\`{}\`{}cpp
+
+\#include "{}easycpp.\+h"{}
+
+using namespace std;
+
+int main() \{
+
+\&\+\#x20; /\+/\+ Clean printing
+
+\&\+\#x20; println("{}\+Hello, "{}, "{}\+World!"{}); /\+/\+ Supports multiple args
+
+\&\+\#x20; /\+/\+ Simple input
+
+\&\+\#x20; string name = input\+\_\+str("{}\+What\textquotesingle{}s your name? "{});
+
+\&\+\#x20; int age = input\+\_\+int("{}\+How old are you? "{});
+
+\&\+\#x20; /\+/\+ String utilities
+
+\&\+\#x20; string s = "{}  Hello World  "{};
+
+\&\+\#x20; println(trim(s)); /\+/\+ "{}\+Hello World"{}
+
+\&\+\#x20; vector$<$string$>$ words = split(s); /\+/\+ \{"{}\+Hello"{}, "{}\+World"{}\}
+
+\&\+\#x20; /\+/\+ Vector utilities
+
+\&\+\#x20; vector$<$int$>$ nums = \{1, 2, 3, 4, 5\};
+
+\&\+\#x20; println("{}\+Sum:\+ "{}, sum(nums)); /\+/\+ 15
+
+\&\+\#x20; println("{}\+Avg:\+ "{}, average(nums)); /\+/\+ 3.\+0
+
+\&\+\#x20; /\+/\+ Colored console output
+
+\&\+\#x20; \doxylink{_e_a_s_y-_c_p_p_8h_a0ae17f340b134a9de2a0659aadf1dbe1}{color\+\_\+red()};
+
+\&\+\#x20; println("{}\+This is red!"{});
+
+\&\+\#x20; \doxylink{_e_a_s_y-_c_p_p_8h_afba58386f81a1ece5dee15034d68a4cb}{color\+\_\+reset()};
+
+\&\+\#x20; return 0;
+
+\} 

@@ -1,0 +1,275 @@
+.TH "docs/doxygen-awesome-css-2.4.2 Directory Reference" 3 "EASY-CPP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+docs/doxygen-awesome-css-2.4.2 Directory Reference
+.SH SYNOPSIS
+.br
+.PP
+.SS "Directories"
+
+.in +1c
+.ti -1c
+.RI "directory \fBdocs\fP"
+.br
+.ti -1c
+.RI "directory \fBinclude\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Doxygen Awesome"
+.PP
+\fR\fP \fR\fP 
+
+.PP
+
+.PP
+
+.PP
+
+.PP
+\fBDoxygen Awesome\fP is a custom CSS theme for Doxygen HTML documentation with many customization options\&.
+.SH "Motivation"
+.PP
+I really like how the Doxygen HTML documentation is structured, but IMHO it looks a bit outdated\&.
+
+.PP
+This theme is an attempt to modernize the visuals of Doxygen without changing its overall layout too much\&.
+.SH "Features"
+.PP
+.IP "\(bu" 2
+🌈 Clean, modern design
+.IP "\(bu" 2
+🚀 Highly customizable by adjusting CSS variables
+.IP "\(bu" 2
+🧩 No changes to the HTML structure of Doxygen are required
+.IP "\(bu" 2
+📱 Improved mobile usability
+.IP "\(bu" 2
+🌘 Dark mode support!
+.IP "\(bu" 2
+🥇 Works best with \fBDoxygen 1\&.9\&.1\fP - \fB1\&.9\&.4\fP and \fB1\&.9\&.6\fP - \fB1\&.16\&.1\fP
+.PP
+.SH "Examples"
+.PP
+Some websites using this theme:
+
+.PP
+.IP "\(bu" 2
+\fRDocumentation of this repository\fP
+.IP "\(bu" 2
+\fRwxWidgets\fP
+.IP "\(bu" 2
+\fROpenCV 5\&.x\fP
+.IP "\(bu" 2
+\fRZephyr\fP
+.IP "\(bu" 2
+\fRSpatial Audio Framework (SAF)\fP
+.IP "\(bu" 2
+\fRRandolf Richardson's C++ classes\fP
+.IP "\(bu" 2
+\fRlibsl3\fP
+.IP "\(bu" 2
+\fRDuMu\*{x\*} \fP
+.IP "\(bu" 2
+\fROpenRemise\fP
+.PP
+.SH "Installation"
+.PP
+To use the theme when generating your documentation, bring the required CSS and JS files from this repository into your project\&.
+
+.PP
+This can be done in several ways:
+
+.PP
+.IP "\(bu" 2
+manually copying the files
+.IP "\(bu" 2
+adding the project as a Git submodule
+.IP "\(bu" 2
+downloading the project with CMake FetchContent
+.IP "\(bu" 2
+adding the project as an npm/xpm dependency
+.IP "\(bu" 2
+installing the theme system-wide
+.PP
+
+.PP
+All theme files are located in the root of this repository and start with the prefix \fRdoxygen-awesome-\fP\&. You may not need all of them\&. Follow the installation instructions to determine which files are required for your setup\&.
+.SS "Git submodule"
+For projects that use Git, add the repository as a submodule and check out the desired release:
+
+.PP
+.PP
+.nf
+git submodule add https://github\&.com/jothepro/doxygen\-awesome\-css\&.git
+cd doxygen\-awesome\-css
+git checkout v2\&.4\&.2
+.fi
+.PP
+.SS "CMake with FetchContent"
+For projects that build with CMake, the \fRFetchContent\fP module can be used to download the repository at configuration time\&.
+
+.PP
+Add the following snippet to your \fRCMakeLists\&.txt\fP:
+
+.PP
+.PP
+.nf
+include(FetchContent)
+FetchContent_Declare(
+    doxygen\-awesome\-css
+    URL https://github\&.com/jothepro/doxygen\-awesome\-css/archive/refs/heads/main\&.zip
+)
+FetchContent_MakeAvailable(doxygen\-awesome\-css)
+
+# Save the location the files were cloned into
+# This allows us to get the path to doxygen\-awesome\&.css
+FetchContent_GetProperties(doxygen\-awesome\-css SOURCE_DIR AWESOME_CSS_DIR)
+
+# Generate the Doxyfile
+set(DOXYFILE_IN ${CMAKE_CURRENT_SOURCE_DIR}/doc/Doxyfile\&.in)
+set(DOXYFILE_OUT ${CMAKE_CURRENT_BINARY_DIR}/Doxyfile)
+configure_file(${DOXYFILE_IN} ${DOXYFILE_OUT} @ONLY)
+.fi
+.PP
+
+.PP
+This downloads the latest main (but any other revision could be used) and unpacks in the build folder\&. The \fRDoxyfile\&.in\fP can reference this location in the \fRHTML_EXTRA_STYLESHEET\fP field
+
+.PP
+.PP
+.nf
+HTML_EXTRA_STYLESHEET  = @AWESOME_CSS_DIR@/doxygen\-awesome\&.css
+.fi
+.PP
+
+.PP
+When the configure stage of CMake is run, the \fRDoxyfile\&.in\fP is rendered to Doxyfile and Doxygen can be run as usual\&.
+.SS "npm/xpm dependency"
+In the npm ecosystem, this project can be added as a development dependency to your project:
+
+.PP
+.PP
+.nf
+cd your\-project
+npm install https://github\&.com/jothepro/doxygen\-awesome\-css#v2\&.4\&.2 \-\-save\-dev
+
+ls \-l node_modules/@jothepro/doxygen\-awesome\-css
+.fi
+.PP
+
+.PP
+Similarly, in the \fRxPack\fP ecosystem, this project can be added as a development dependency to an \fR\fRxpm\fP\fP managed project\&.
+.SS "System-wide"
+You can even install the theme system-wide by running \fRmake install\fP\&. The files will be installed to \fR/usr/local/share/\fP by default, but you can customize the install location with \fRmake PREFIX=/my/custom/path install\fP\&.
+.SS "Choosing a layout"
+There are two layout options\&. Choose one of them and configure Doxygen accordingly:
+
+.PP
+
+.PP
+.IP "\(bu" 2
+\fBBase Theme\fP   Comes with the typical Doxygen titlebar\&. Optionally the treeview in the sidebar can be enabled\&.
+
+.PP
+Required files: \fRdoxygen-awesome\&.css\fP
+
+.PP
+Required \fRDoxyfile\fP configuration: 
+.PP
+.nf
+GENERATE_TREEVIEW      = YES # optional\&. Also works without treeview
+DISABLE_INDEX = NO
+FULL_SIDEBAR = NO
+HTML_EXTRA_STYLESHEET  = doxygen\-awesome\-css/doxygen\-awesome\&.css
+HTML_COLORSTYLE        = LIGHT # required with Doxygen >= 1\&.9\&.5
+
+.fi
+.PP
+
+.IP "\(bu" 2
+\fBSidebar-Only Theme\fP   Hides the top titlebar to give more space to the content\&. The treeview must be enabled in order for this theme to work\&.
+
+.PP
+Required files: \fRdoxygen-awesome\&.css\fP, \fRdoxygen-awesome-sidebar-only\&.css\fP
+
+.PP
+Required \fRDoxyfile\fP configuration: 
+.PP
+.nf
+GENERATE_TREEVIEW      = YES # required!
+DISABLE_INDEX          = NO
+FULL_SIDEBAR           = NO
+HTML_EXTRA_STYLESHEET  = doxygen\-awesome\-css/doxygen\-awesome\&.css \\
+                        doxygen\-awesome\-css/doxygen\-awesome\-sidebar\-only\&.css
+HTML_COLORSTYLE        = LIGHT # required with Doxygen >= 1\&.9\&.5
+
+.fi
+.PP
+
+.PP
+
+.PP
+
+.PP
+
+.br
+
+.PP
+\fBWarning\fP
+.RS 4
+.IP "\(bu" 2
+This theme is not compatible with the \fRFULL_SIDEBAR = YES\fP option provided by Doxygen!
+.IP "\(bu" 2
+\fRHTML_COLORSTYLE\fP must be set to \fRLIGHT\fP since Doxygen 1\&.9\&.5!
+.PP
+.RE
+.PP
+.SS "Further installation instructions"
+.IP "\(bu" 2
+\fBInstalling extensions\fP
+.IP "\(bu" 2
+\fBCustomizing the theme (colors, spacing, border-radius, \&.\&.\&.)\fP
+.IP "\(bu" 2
+\fBTips and Tricks for further configuration\fP
+.PP
+.SH "Browser support"
+.PP
+Tested with
+
+.PP
+.IP "\(bu" 2
+Chrome 140, Chrome 140 for Android, Chrome 141 for iOS
+.IP "\(bu" 2
+Safari 26, Safari for iOS 26
+.IP "\(bu" 2
+Firefox 143, Firefox 142 for Android, Firefox 143 for iOS
+.IP "\(bu" 2
+Edge 140
+.IP "\(bu" 2
+Opera One 122
+.PP
+
+.PP
+The theme does not strive to be backward compatible with (significantly) older browser versions\&.
+.SH "Credits"
+.PP
+Thanks for all the bug reports and inspiring feedback on GitHub!
+
+.PP
+Special thanks to all the contributors: 
+.br
+
+.br
+ \fR \fP
+
+.PP
+
+.PP
+Read Next  \fBExtensions\fP  
+
+.PP
+ 

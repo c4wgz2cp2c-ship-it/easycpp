@@ -1,0 +1,1647 @@
+\doxysection{EASY-\/\+CPP.h File Reference}
+\hypertarget{_e_a_s_y-_c_p_p_8h}{}\label{_e_a_s_y-_c_p_p_8h}\index{EASY-\/CPP.h@{EASY-\/CPP.h}}
+{\ttfamily \+\#include $<$iostream$>$}\newline
+{\ttfamily \+\#include $<$fstream$>$}\newline
+{\ttfamily \+\#include $<$string$>$}\newline
+{\ttfamily \+\#include $<$vector$>$}\newline
+{\ttfamily \+\#include $<$map$>$}\newline
+{\ttfamily \+\#include $<$unordered\+\_\+map$>$}\newline
+{\ttfamily \+\#include $<$sstream$>$}\newline
+{\ttfamily \+\#include $<$iomanip$>$}\newline
+{\ttfamily \+\#include $<$algorithm$>$}\newline
+{\ttfamily \+\#include $<$cmath$>$}\newline
+{\ttfamily \+\#include $<$chrono$>$}\newline
+{\ttfamily \+\#include $<$random$>$}\newline
+{\ttfamily \+\#include $<$thread$>$}\newline
+{\ttfamily \+\#include $<$cstdlib$>$}\newline
+{\ttfamily \+\#include $<$ctime$>$}\newline
+{\ttfamily \+\#include $<$string\+\_\+view$>$}\newline
+{\ttfamily \+\#include $<$optional$>$}\newline
+{\ttfamily \+\#include $<$filesystem$>$}\newline
+Include dependency graph for EASY-\/\+CPP.h:\+
+% FIG 0
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{class_stopwatch}{Stopwatch}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_abfb177ce1196f388fbf2eed6e5b5bd87}{to\+\_\+lower}} (char c) noexcept
+\item 
+string \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a175c09f4dd01c8ae3f1ef6392a8f865a}{to\+\_\+lower}} (string str)
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_ab8d5c5cd4eb5ba24e8272897a9b1f1a1}{print}} (const Args \&... args) noexcept
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a7f0b343405db7d1ad917da8e639fd9c4}{println}} (const Args \&... args) noexcept
+\item 
+void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_ab2f27a8e666205a595842eb3cde50810}{print}} (const string \&s) noexcept
+\item 
+void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_aba83a80ba0215e1e7258ef0f7893ca49}{print}} (const char \texorpdfstring{$\ast$}{*}s) noexcept
+\item 
+void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a70701c4e3d68d155fe1ffba1ac1eed61}{print}} (char c) noexcept
+\item 
+void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a28874128391e2e566ac1cbf39171975a}{print}} (int n) noexcept
+\item 
+void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a782ae3c02709f782722b977fc66e3071}{print}} (float n) noexcept
+\item 
+void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a413052ff5e130183d9c33588ff4c711a}{print}} (double n) noexcept
+\item 
+void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_adb8014af7a7356246a39161cdfa778a9}{print}} (long int n) noexcept
+\item 
+void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a7b73d1c1793eadb1ca7efdc08dfe1369}{print}} (bool b) noexcept
+\item 
+void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a9feb8223c82f994e344445c096c57422}{input}} (string \&s)
+\item 
+void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_adf9082c4490661654735942a0104c08c}{input}} (int \&n)
+\item 
+void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a29266f8d8714aac5e6531a9a0cda23f4}{input}} (float \&n)
+\item 
+void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a21bf1789df5631b77da623fd8d39e250}{input}} (double \&n)
+\item 
+void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a8eab4d8fa9a794142675fc3300eab485}{input}} (char \&c)
+\item 
+void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_ad7d30b7b014f9679315d5dacd2b7ca33}{input}} (long int \&n)
+\item 
+void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a14776f33fe9d730e564db236865cee4b}{input}} (bool \&b)
+\item 
+string \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a88fc83dab7da305e1d16ab1d412a81df}{input\+\_\+str}} (string prompt="{}"{})
+\item 
+int \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_ab1a67023dc28bc1ff9e0ad9c5d3b4c5f}{input\+\_\+int}} (string prompt="{}"{})
+\item 
+float \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_abf50a15695daad0e24273449d4ec1503}{input\+\_\+float}} (string prompt="{}"{})
+\item 
+double \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a7c7c79caf7bf1cea5a1002d919b8e6d3}{input\+\_\+double}} (string prompt="{}"{})
+\item 
+bool \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_adc6cdfda11b7ef4dfb0d4c8fe751e2c4}{input\+\_\+bool}} (string prompt="{}"{})
+\item 
+{\footnotesize template$<$typename T, size\+\_\+t N$>$ }\\void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_af9f796a241713d74342d848db426a810}{print}} (T(\&arr)\+[N]\+)
+\item 
+{\footnotesize template$<$typename T$>$ }\\void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_ab478baeb6c9651e8cb2210e3b3db270a}{print}} (const vector$<$ T $>$ \&v)
+\item 
+{\footnotesize template$<$typename T, size\+\_\+t N$>$ }\\void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_ab24ab835ced675315a2a992b8dd78ad3}{input}} (T(\&arr)\+[N]\+)
+\item 
+{\footnotesize template$<$typename T$>$ }\\void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_aefb7e6ceaebb920abc0989ef964ec0d6}{input}} (vector$<$ T $>$ \&v)
+\item 
+void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_ac8ce7435741c7ea01dfede51925f070e}{write\+\_\+file}} (string filename, string mode="{}out"{})
+\item 
+void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a9dd83080ba331b25a43fe891e6e50ea4}{read\+\_\+file}} (string filename)
+\item 
+void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_adfedf53c92540fc1ef87a10ef95676c4}{append\+\_\+file}} (string filename, const string \&content)
+\item 
+string \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a1e1e5cddfd690b19971c6ea14f5973d7}{read\+\_\+file\+\_\+as\+\_\+string}} (const string \&filename)
+\item 
+void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a13f1b552cdfac90d6d3d5128e5ef08b0}{write\+\_\+lines}} (const string \&filename, const vector$<$ string $>$ \&lines)
+\item 
+vector$<$ string $>$ \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a23c95fa5e26e157f3c170f94f62966b4}{read\+\_\+lines}} (const string \&filename)
+\item 
+string \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a489e4f6e6f729dfe55234da73de628ec}{get\+\_\+filename}} (string\+\_\+view path)
+\item 
+string \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_ace0fa273b254debf1260e197a952d62d}{get\+\_\+extension}} (string\+\_\+view path)
+\item 
+string \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_ae9734dfbfc2da178737f478dac6e0112}{get\+\_\+parent\+\_\+path}} (string\+\_\+view path)
+\item 
+string \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a1e50669bc4d1aa00ed53e1f0ded2daaf}{get\+\_\+stem}} (string\+\_\+view path)
+\item 
+string \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a910069ff45b2de4d734fb1758abf0933}{get\+\_\+env}} (const string \&name)
+\item 
+void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a01cb172b400ce03924e5e84396aa8170}{set\+\_\+env}} (const string \&name, const string \&value)
+\item 
+{\footnotesize template$<$typename T$>$ }\\T \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_aa6e9187a2ef566cd6c7fee2b05b3c43c}{min\+\_\+val}} (T a, T b) noexcept
+\item 
+{\footnotesize template$<$typename T$>$ }\\T \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_accb9c3fa2f791053e66ebf6f70dc4835}{max\+\_\+val}} (T a, T b) noexcept
+\item 
+{\footnotesize template$<$typename T$>$ }\\T \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_aac9b37636be82db68369ab49946fd899}{clamp}} (T val, T minv, T maxv) noexcept
+\item 
+double \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a10ce939972a0e32abb735bea5c16b862}{pow\+\_\+val}} (double base, double exp) noexcept
+\item 
+double \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_abd8b55cf83a18e9ab8c4c4bd1527a3a2}{sqrt\+\_\+val}} (double x) noexcept
+\item 
+double \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a6a15d499450cdf9acbec9b72767c14bc}{cbrt\+\_\+val}} (double x) noexcept
+\item 
+double \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a8699f5c3a64d507706adb6f2f9eba6b2}{lerp}} (double a, double b, double t) noexcept
+\item 
+int \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_ae1b37c26bb8e5744f5747d6cd6505356}{factorial}} (int n)
+\item 
+int \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a9dbc4d0e3c5e97b137283f4a8803facd}{fibonacci}} (int n)
+\item 
+bool \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_ad98b3f21ac2fea67a659b975313b799b}{is\+\_\+even}} (int n) noexcept
+\item 
+bool \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a9b5dc16d7a0f3627cd184a4928fc37e7}{is\+\_\+odd}} (int n) noexcept
+\item 
+double \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a8c0a83e824fee7331c14b8588abfb1d1}{to\+\_\+radians}} (double deg) noexcept
+\item 
+double \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a1c2e432676ececa5a4af6452ba10eba6}{to\+\_\+degrees}} (double rad) noexcept
+\item 
+bool \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a2a74ca8fd3b3fe322c422bbc9b83e283}{starts\+\_\+with}} (string\+\_\+view str, string\+\_\+view prefix) noexcept
+\item 
+bool \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a106d501bdbd6189c5878a19a9a5e96c0}{ends\+\_\+with}} (string\+\_\+view str, string\+\_\+view suffix) noexcept
+\item 
+bool \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a3b929150d538aeecc2904bc2d6695826}{contains}} (string\+\_\+view str, string\+\_\+view substr) noexcept
+\item 
+string \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_aaf12d907de70adc24798f43e9635b669}{replace}} (string\+\_\+view str, string\+\_\+view from, string\+\_\+view to)
+\item 
+string \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_aefb37d35e26e42a781cf247bbdcfd397}{replace\+\_\+all}} (string\+\_\+view str, string\+\_\+view from, string\+\_\+view to)
+\item 
+string \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a3a298aea409b5d7355c3c0e53ba0e628}{to\+\_\+upper}} (string str)
+\item 
+string \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a820a5c7570e799f242affd5b9b687e2e}{capitalize}} (string str)
+\item 
+string \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_af2426daf17040a8668703514a3c9f8a8}{trim}} (string\+\_\+view str)
+\item 
+string \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_ae7680c41fbc9a580f5c32e041298017f}{ltrim}} (string\+\_\+view str)
+\item 
+string \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_af53bfcfdb0530c1d01adca1ccdc0e9a5}{rtrim}} (string\+\_\+view str)
+\item 
+vector$<$ string $>$ \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_aa4dda9bff3cd366b4b50dc4bb1922294}{split}} (string\+\_\+view str, char delimiter=\textquotesingle{} \textquotesingle{})
+\item 
+string \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a1ae5c4c41e044c304ec6237771eba903}{join}} (const vector$<$ string $>$ \&vec, string\+\_\+view delimiter="{} "{})
+\item 
+string \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a271477ad821cf725f7c5ea7968a8bdb7}{repeat}} (string\+\_\+view str, int times)
+\item 
+{\footnotesize template$<$typename T$>$ }\\T \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_ab36dcd80f0ed4ba407e968543dfa6da5}{sum}} (const vector$<$ T $>$ \&v)
+\item 
+{\footnotesize template$<$typename T$>$ }\\double \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a8995ec4ee1bc0d35ec9ec1534628e6be}{average}} (const vector$<$ T $>$ \&v)
+\item 
+{\footnotesize template$<$typename T$>$ }\\T \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_ab2f6c57fae0d9f31f1d7b2828a0d11f6}{max\+\_\+element}} (const vector$<$ T $>$ \&v)
+\item 
+{\footnotesize template$<$typename T$>$ }\\T \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a71530537e7cb34171551fc6d42787113}{min\+\_\+element}} (const vector$<$ T $>$ \&v)
+\item 
+{\footnotesize template$<$typename T$>$ }\\bool \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a3813a97e366a3febf4fcdba5fa6e9671}{contains}} (const vector$<$ T $>$ \&v, const T \&value)
+\item 
+{\footnotesize template$<$typename T$>$ }\\void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a19bdea2587b8651b29ea6d069a28a2de}{sort\+\_\+vec}} (vector$<$ T $>$ \&v)
+\item 
+{\footnotesize template$<$typename T$>$ }\\void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_ac2fd3fc1c862128651684f20c2c50242}{reverse\+\_\+vec}} (vector$<$ T $>$ \&v)
+\item 
+{\footnotesize template$<$typename T$>$ }\\void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_af75af98a91143dc63382b7f1c268cd57}{clear\+\_\+vec}} (vector$<$ T $>$ \&v)
+\item 
+{\footnotesize template$<$typename T$>$ }\\void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a0a985f79f6cc92b32e731a4bb4c67b1d}{push\+\_\+unique}} (vector$<$ T $>$ \&v, const T \&value)
+\item 
+{\footnotesize template$<$typename T, typename Predicate$>$ }\\void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a21a494b2fef661814587c6739e6b1705}{filter\+\_\+vec}} (vector$<$ T $>$ \&v, Predicate pred)
+\item 
+{\footnotesize template$<$typename T, typename Function$>$ }\\void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_aa0e876e3cc7bc4cc7e41596e9cdba416}{for\+\_\+each\+\_\+vec}} (vector$<$ T $>$ \&v, Function func)
+\item 
+{\footnotesize template$<$typename K, typename V$>$ }\\bool \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_ac9235f20619c4e0af1050800edac9068}{map\+\_\+contains}} (const map$<$ K, V $>$ \&m, const K \&key) noexcept
+\item 
+{\footnotesize template$<$typename K, typename V$>$ }\\bool \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a8b23e25fd6de4b1e9533a84e285f3c57}{map\+\_\+contains}} (const unordered\+\_\+map$<$ K, V $>$ \&m, const K \&key) noexcept
+\item 
+{\footnotesize template$<$typename K, typename V$>$ }\\void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a7729c382f8982457b8de6107f78d1646}{print\+\_\+map}} (const map$<$ K, V $>$ \&m)
+\item 
+{\footnotesize template$<$typename K, typename V$>$ }\\void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a31705f4711d21e169e3b512c8a3a8547}{print\+\_\+map}} (const unordered\+\_\+map$<$ K, V $>$ \&m)
+\item 
+string \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_ab9072456e4dc0414ac6996561fd8d9aa}{current\+\_\+time}} ()
+\item 
+string \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a74767f72335717241130ea20f49fbc6d}{current\+\_\+date}} ()
+\item 
+long long \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a52cc95a96de93108f2d64e59b939a4df}{timestamp\+\_\+ms}} () noexcept
+\item 
+void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a1e9a9ddbac9fe5a683ac2abf7309e5c2}{sleep\+\_\+ms}} (int ms) noexcept
+\item 
+void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_ad8869fdfb01518a6afe3a8011998c513}{sleep\+\_\+sec}} (int sec) noexcept
+\item 
+void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_afba58386f81a1ece5dee15034d68a4cb}{color\+\_\+reset}} () noexcept
+\item 
+void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a0ae17f340b134a9de2a0659aadf1dbe1}{color\+\_\+red}} () noexcept
+\item 
+void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a614b3562ac8cbceeb403b9d8ba942e20}{color\+\_\+green}} () noexcept
+\item 
+void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a42e10d617e555a5fb3a1a20289bc1fa3}{color\+\_\+yellow}} () noexcept
+\item 
+void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a2259fb05c9a79747025ea254492f7ec7}{color\+\_\+blue}} () noexcept
+\item 
+void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a79b9b19f4d68e5d5a2490df5ec958ba5}{color\+\_\+magenta}} () noexcept
+\item 
+void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a752f91d010900b63c5a8bf555912b6f8}{color\+\_\+cyan}} () noexcept
+\item 
+void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a871c72df80e7607566b1336395d31410}{color\+\_\+bold}} () noexcept
+\item 
+void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_ad4148eb0ea8bd3359e5280d286e97189}{color\+\_\+underline}} () noexcept
+\item 
+void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a19bae87eec0878085a69dda19be2a74d}{debug}} (const string \&msg) noexcept
+\item 
+void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_ad260d8f272c4b3e596884c636ef540d4}{log\+\_\+info}} (const string \&msg) noexcept
+\item 
+void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a498b05ca0fb9bdcedf12d794302332ac}{log\+\_\+warn}} (const string \&msg) noexcept
+\item 
+void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a2e7eebd4d393d9cd24e5c5dacc4a44cf}{log\+\_\+error}} (const string \&msg) noexcept
+\item 
+void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a1631f60fe62b09471b096b46aac08b9e}{assert\+\_\+true}} (bool condition, const string \&message="{}Assertion failed"{})
+\item 
+void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a03bfacfaaba9195e4498375659f43531}{clear}} () noexcept
+\item 
+void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a7008f74a87f870f21a5d9f61bc5898cc}{pause}} (string message="{}Press ENTER to continue..."{}) noexcept
+\item 
+void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a8ac456bd4d698b9ad35bfc6d8c2673e8}{exit\+\_\+program}} (int code=0) noexcept
+\item 
+string \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a21039ba3b618f38907dfe75e93d19301}{get\+\_\+os}} () noexcept
+\item 
+void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a2749e313d5ad053da712694f6f3b4e63}{random\+\_\+init}} () noexcept
+\item 
+int \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_ac05a86a224399b9df69f6faff2136ef8}{random\+\_\+int}} (int min, int max) noexcept
+\item 
+double \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_ae7cb8f9511628048a7f76102cc85771f}{random\+\_\+double}} (double min=0.\+0, double max=1.\+0) noexcept
+\item 
+bool \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a6b1cfa1ac46812e4f61b018dd7a3cadc}{random\+\_\+bool}} () noexcept
+\item 
+{\footnotesize template$<$typename T$>$ }\\void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a76551f62ac1a0d6195efc8f090f8ce49}{print\+\_\+ptr}} (const T \texorpdfstring{$\ast$}{*}ptr) noexcept
+\item 
+{\footnotesize template$<$typename T$>$ }\\bool \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_ad43073dc6c34d73be875781dee270dcc}{is\+\_\+null}} (const T \texorpdfstring{$\ast$}{*}ptr) noexcept
+\item 
+{\footnotesize template$<$typename T$>$ }\\string \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a7cf375d11a1919b85dcfe51d9693d88f}{to\+\_\+str}} (const T \&value)
+\item 
+int \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_aa12df8fe53bba1068c9822bfb95eb2ef}{to\+\_\+int}} (string\+\_\+view str)
+\item 
+double \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a584c5050b0d9fa9f23fb3e4d6e9e6d32}{to\+\_\+double}} (string\+\_\+view str)
+\item 
+bool \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_ad45d64fcb7713dce6b88d8cb59cf4567}{to\+\_\+bool}} (string\+\_\+view str)
+\item 
+{\footnotesize template$<$typename T$>$ }\\void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a062cc18aa0448213bb63eec7a07495c4}{swap\+\_\+val}} (T \&a, T \&b) noexcept
+\item 
+bool \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a38dc0e0e9b54d2def9d8eefffdb27d55}{is\+\_\+prime}} (int n) noexcept
+\item 
+int \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a66e95706692e5294b2ebdbdf1e654243}{gcd}} (int a, int b) noexcept
+\item 
+int \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a09ecf9a7361c55a14f20690710d7788b}{lcm}} (int a, int b) noexcept
+\item 
+string \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a9040e48b2b409cc43a8e533d736b6812}{base64\+\_\+encode}} (const string \&data)
+\item 
+string \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a067ae1b3670dd8734e745738be721290}{base64\+\_\+decode}} (const string \&encoded)
+\item 
+void \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_abe46ded282fcc301fa8932b30b2e3271}{progress\+\_\+bar}} (int progress, int total=100, int width=50)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+constexpr double \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_a299aabc5fc8285cbf99025330a3d0d0d}{PI}} = 3.\+141592653589793
+\item 
+constexpr double \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_acea65c39dac8dcaadc5ee2c8b1219463}{E}} = 2.\+718281828459045
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{_e_a_s_y-_c_p_p_8h_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{_e_a_s_y-_c_p_p_8h_adfedf53c92540fc1ef87a10ef95676c4}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!append\_file@{append\_file}}
+\index{append\_file@{append\_file}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{append\_file()}{append\_file()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_adfedf53c92540fc1ef87a10ef95676c4} 
+void append\+\_\+file (\begin{DoxyParamCaption}\item[{string}]{filename}{, }\item[{const string \&}]{content}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00347}{347}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a1631f60fe62b09471b096b46aac08b9e}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!assert\_true@{assert\_true}}
+\index{assert\_true@{assert\_true}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{assert\_true()}{assert\_true()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a1631f60fe62b09471b096b46aac08b9e} 
+void assert\+\_\+true (\begin{DoxyParamCaption}\item[{bool}]{condition}{, }\item[{const string \&}]{message}{ = {\ttfamily "{}Assertion~failed"{}}}\end{DoxyParamCaption})}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00664}{664}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the call graph for this function:\+
+% FIG 1
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a8995ec4ee1bc0d35ec9ec1534628e6be}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!average@{average}}
+\index{average@{average}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{average()}{average()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a8995ec4ee1bc0d35ec9ec1534628e6be} 
+template$<$typename T$>$ \\
+double average (\begin{DoxyParamCaption}\item[{const vector$<$ T $>$ \&}]{v}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00543}{543}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the call graph for this function:\+
+% FIG 2
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a067ae1b3670dd8734e745738be721290}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!base64\_decode@{base64\_decode}}
+\index{base64\_decode@{base64\_decode}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{base64\_decode()}{base64\_decode()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a067ae1b3670dd8734e745738be721290} 
+string base64\+\_\+decode (\begin{DoxyParamCaption}\item[{const string \&}]{encoded}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00785}{785}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a9040e48b2b409cc43a8e533d736b6812}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!base64\_encode@{base64\_encode}}
+\index{base64\_encode@{base64\_encode}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{base64\_encode()}{base64\_encode()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a9040e48b2b409cc43a8e533d736b6812} 
+string base64\+\_\+encode (\begin{DoxyParamCaption}\item[{const string \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00762}{762}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a820a5c7570e799f242affd5b9b687e2e}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!capitalize@{capitalize}}
+\index{capitalize@{capitalize}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{capitalize()}{capitalize()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a820a5c7570e799f242affd5b9b687e2e} 
+string capitalize (\begin{DoxyParamCaption}\item[{string}]{str}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00478}{478}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a6a15d499450cdf9acbec9b72767c14bc}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!cbrt\_val@{cbrt\_val}}
+\index{cbrt\_val@{cbrt\_val}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{cbrt\_val()}{cbrt\_val()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a6a15d499450cdf9acbec9b72767c14bc} 
+double cbrt\+\_\+val (\begin{DoxyParamCaption}\item[{double}]{x}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [nodiscard]}, {\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00092}{92}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_aac9b37636be82db68369ab49946fd899}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!clamp@{clamp}}
+\index{clamp@{clamp}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{clamp()}{clamp()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_aac9b37636be82db68369ab49946fd899} 
+template$<$typename T$>$ \\
+T clamp (\begin{DoxyParamCaption}\item[{T}]{val}{, }\item[{T}]{minv}{, }\item[{T}]{maxv}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [nodiscard]}, {\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00088}{88}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the call graph for this function:\+
+% FIG 3
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a03bfacfaaba9195e4498375659f43531}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!clear@{clear}}
+\index{clear@{clear}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a03bfacfaaba9195e4498375659f43531} 
+void clear (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00674}{674}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_af75af98a91143dc63382b7f1c268cd57}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!clear\_vec@{clear\_vec}}
+\index{clear\_vec@{clear\_vec}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{clear\_vec()}{clear\_vec()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_af75af98a91143dc63382b7f1c268cd57} 
+template$<$typename T$>$ \\
+void clear\+\_\+vec (\begin{DoxyParamCaption}\item[{vector$<$ T $>$ \&}]{v}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00573}{573}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a2259fb05c9a79747025ea254492f7ec7}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!color\_blue@{color\_blue}}
+\index{color\_blue@{color\_blue}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{color\_blue()}{color\_blue()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a2259fb05c9a79747025ea254492f7ec7} 
+void color\+\_\+blue (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00171}{171}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the call graph for this function:\+
+% FIG 4
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a871c72df80e7607566b1336395d31410}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!color\_bold@{color\_bold}}
+\index{color\_bold@{color\_bold}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{color\_bold()}{color\_bold()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a871c72df80e7607566b1336395d31410} 
+void color\+\_\+bold (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00174}{174}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the call graph for this function:\+
+% FIG 5
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a752f91d010900b63c5a8bf555912b6f8}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!color\_cyan@{color\_cyan}}
+\index{color\_cyan@{color\_cyan}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{color\_cyan()}{color\_cyan()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a752f91d010900b63c5a8bf555912b6f8} 
+void color\+\_\+cyan (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00173}{173}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the call graph for this function:\+
+% FIG 6
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a614b3562ac8cbceeb403b9d8ba942e20}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!color\_green@{color\_green}}
+\index{color\_green@{color\_green}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{color\_green()}{color\_green()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a614b3562ac8cbceeb403b9d8ba942e20} 
+void color\+\_\+green (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00169}{169}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the call graph for this function:\+
+% FIG 7
+Here is the caller graph for this function:\+
+% FIG 8
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a79b9b19f4d68e5d5a2490df5ec958ba5}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!color\_magenta@{color\_magenta}}
+\index{color\_magenta@{color\_magenta}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{color\_magenta()}{color\_magenta()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a79b9b19f4d68e5d5a2490df5ec958ba5} 
+void color\+\_\+magenta (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00172}{172}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the call graph for this function:\+
+% FIG 9
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a0ae17f340b134a9de2a0659aadf1dbe1}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!color\_red@{color\_red}}
+\index{color\_red@{color\_red}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{color\_red()}{color\_red()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a0ae17f340b134a9de2a0659aadf1dbe1} 
+void color\+\_\+red (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00168}{168}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the call graph for this function:\+
+% FIG 10
+Here is the caller graph for this function:\+
+% FIG 11
+\Hypertarget{_e_a_s_y-_c_p_p_8h_afba58386f81a1ece5dee15034d68a4cb}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!color\_reset@{color\_reset}}
+\index{color\_reset@{color\_reset}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{color\_reset()}{color\_reset()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_afba58386f81a1ece5dee15034d68a4cb} 
+void color\+\_\+reset (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00167}{167}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the call graph for this function:\+
+% FIG 12
+Here is the caller graph for this function:\+
+% FIG 13
+\Hypertarget{_e_a_s_y-_c_p_p_8h_ad4148eb0ea8bd3359e5280d286e97189}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!color\_underline@{color\_underline}}
+\index{color\_underline@{color\_underline}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{color\_underline()}{color\_underline()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_ad4148eb0ea8bd3359e5280d286e97189} 
+void color\+\_\+underline (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00175}{175}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the call graph for this function:\+
+% FIG 14
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a42e10d617e555a5fb3a1a20289bc1fa3}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!color\_yellow@{color\_yellow}}
+\index{color\_yellow@{color\_yellow}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{color\_yellow()}{color\_yellow()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a42e10d617e555a5fb3a1a20289bc1fa3} 
+void color\+\_\+yellow (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00170}{170}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the call graph for this function:\+
+% FIG 15
+Here is the caller graph for this function:\+
+% FIG 16
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a3813a97e366a3febf4fcdba5fa6e9671}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!contains@{contains}}
+\index{contains@{contains}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{contains()}{contains()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a3813a97e366a3febf4fcdba5fa6e9671} 
+template$<$typename T$>$ \\
+bool contains (\begin{DoxyParamCaption}\item[{const vector$<$ T $>$ \&}]{v}{, }\item[{const T \&}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00561}{561}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a3b929150d538aeecc2904bc2d6695826}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!contains@{contains}}
+\index{contains@{contains}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{contains()}{contains()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a3b929150d538aeecc2904bc2d6695826} 
+bool contains (\begin{DoxyParamCaption}\item[{string\+\_\+view}]{str}{, }\item[{string\+\_\+view}]{substr}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}, {\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00449}{449}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the caller graph for this function:\+
+% FIG 17
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a74767f72335717241130ea20f49fbc6d}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!current\_date@{current\_date}}
+\index{current\_date@{current\_date}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{current\_date()}{current\_date()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a74767f72335717241130ea20f49fbc6d} 
+string current\+\_\+date (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00630}{630}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_ab9072456e4dc0414ac6996561fd8d9aa}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!current\_time@{current\_time}}
+\index{current\_time@{current\_time}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{current\_time()}{current\_time()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_ab9072456e4dc0414ac6996561fd8d9aa} 
+string current\+\_\+time (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00621}{621}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a19bae87eec0878085a69dda19be2a74d}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!debug@{debug}}
+\index{debug@{debug}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{debug()}{debug()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a19bae87eec0878085a69dda19be2a74d} 
+void debug (\begin{DoxyParamCaption}\item[{const string \&}]{msg}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00659}{659}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the call graph for this function:\+
+% FIG 18
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a106d501bdbd6189c5878a19a9a5e96c0}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!ends\_with@{ends\_with}}
+\index{ends\_with@{ends\_with}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{ends\_with()}{ends\_with()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a106d501bdbd6189c5878a19a9a5e96c0} 
+bool ends\+\_\+with (\begin{DoxyParamCaption}\item[{string\+\_\+view}]{str}{, }\item[{string\+\_\+view}]{suffix}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}, {\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00443}{443}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a8ac456bd4d698b9ad35bfc6d8c2673e8}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!exit\_program@{exit\_program}}
+\index{exit\_program@{exit\_program}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{exit\_program()}{exit\_program()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a8ac456bd4d698b9ad35bfc6d8c2673e8} 
+void exit\+\_\+program (\begin{DoxyParamCaption}\item[{int}]{code}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00682}{682}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_ae1b37c26bb8e5744f5747d6cd6505356}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!factorial@{factorial}}
+\index{factorial@{factorial}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{factorial()}{factorial()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_ae1b37c26bb8e5744f5747d6cd6505356} 
+int factorial (\begin{DoxyParamCaption}\item[{int}]{n}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00419}{419}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the call graph for this function:\+
+% FIG 19
+Here is the caller graph for this function:\+
+% FIG 20
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a9dbc4d0e3c5e97b137283f4a8803facd}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!fibonacci@{fibonacci}}
+\index{fibonacci@{fibonacci}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{fibonacci()}{fibonacci()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a9dbc4d0e3c5e97b137283f4a8803facd} 
+int fibonacci (\begin{DoxyParamCaption}\item[{int}]{n}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00424}{424}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a21a494b2fef661814587c6739e6b1705}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!filter\_vec@{filter\_vec}}
+\index{filter\_vec@{filter\_vec}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{filter\_vec()}{filter\_vec()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a21a494b2fef661814587c6739e6b1705} 
+template$<$typename T, typename Predicate$>$ \\
+void filter\+\_\+vec (\begin{DoxyParamCaption}\item[{vector$<$ T $>$ \&}]{v}{, }\item[{Predicate}]{pred}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00582}{582}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_aa0e876e3cc7bc4cc7e41596e9cdba416}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!for\_each\_vec@{for\_each\_vec}}
+\index{for\_each\_vec@{for\_each\_vec}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{for\_each\_vec()}{for\_each\_vec()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_aa0e876e3cc7bc4cc7e41596e9cdba416} 
+template$<$typename T, typename Function$>$ \\
+void for\+\_\+each\+\_\+vec (\begin{DoxyParamCaption}\item[{vector$<$ T $>$ \&}]{v}{, }\item[{Function}]{func}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00588}{588}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a66e95706692e5294b2ebdbdf1e654243}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!gcd@{gcd}}
+\index{gcd@{gcd}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{gcd()}{gcd()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a66e95706692e5294b2ebdbdf1e654243} 
+int gcd (\begin{DoxyParamCaption}\item[{int}]{a}{, }\item[{int}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}, {\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00745}{745}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the caller graph for this function:\+
+% FIG 21
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a910069ff45b2de4d734fb1758abf0933}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!get\_env@{get\_env}}
+\index{get\_env@{get\_env}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{get\_env()}{get\_env()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a910069ff45b2de4d734fb1758abf0933} 
+string get\+\_\+env (\begin{DoxyParamCaption}\item[{const string \&}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00403}{403}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_ace0fa273b254debf1260e197a952d62d}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!get\_extension@{get\_extension}}
+\index{get\_extension@{get\_extension}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{get\_extension()}{get\_extension()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_ace0fa273b254debf1260e197a952d62d} 
+string get\+\_\+extension (\begin{DoxyParamCaption}\item[{string\+\_\+view}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00383}{383}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a489e4f6e6f729dfe55234da73de628ec}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!get\_filename@{get\_filename}}
+\index{get\_filename@{get\_filename}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{get\_filename()}{get\_filename()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a489e4f6e6f729dfe55234da73de628ec} 
+string get\+\_\+filename (\begin{DoxyParamCaption}\item[{string\+\_\+view}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00377}{377}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the caller graph for this function:\+
+% FIG 22
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a21039ba3b618f38907dfe75e93d19301}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!get\_os@{get\_os}}
+\index{get\_os@{get\_os}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{get\_os()}{get\_os()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a21039ba3b618f38907dfe75e93d19301} 
+string get\+\_\+os (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}, {\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00684}{684}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_ae9734dfbfc2da178737f478dac6e0112}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!get\_parent\_path@{get\_parent\_path}}
+\index{get\_parent\_path@{get\_parent\_path}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{get\_parent\_path()}{get\_parent\_path()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_ae9734dfbfc2da178737f478dac6e0112} 
+string get\+\_\+parent\+\_\+path (\begin{DoxyParamCaption}\item[{string\+\_\+view}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00389}{389}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a1e50669bc4d1aa00ed53e1f0ded2daaf}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!get\_stem@{get\_stem}}
+\index{get\_stem@{get\_stem}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{get\_stem()}{get\_stem()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a1e50669bc4d1aa00ed53e1f0ded2daaf} 
+string get\+\_\+stem (\begin{DoxyParamCaption}\item[{string\+\_\+view}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00395}{395}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the call graph for this function:\+
+% FIG 23
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a14776f33fe9d730e564db236865cee4b}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!input@{input}}
+\index{input@{input}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{input()}{input()}\hspace{0.1cm}{\footnotesize\ttfamily [1/9]}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a14776f33fe9d730e564db236865cee4b} 
+void input (\begin{DoxyParamCaption}\item[{bool \&}]{b}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00238}{238}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the call graph for this function:\+
+% FIG 24
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a8eab4d8fa9a794142675fc3300eab485}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!input@{input}}
+\index{input@{input}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{input()}{input()}\hspace{0.1cm}{\footnotesize\ttfamily [2/9]}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a8eab4d8fa9a794142675fc3300eab485} 
+void input (\begin{DoxyParamCaption}\item[{char \&}]{c}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a21bf1789df5631b77da623fd8d39e250}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!input@{input}}
+\index{input@{input}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{input()}{input()}\hspace{0.1cm}{\footnotesize\ttfamily [3/9]}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a21bf1789df5631b77da623fd8d39e250} 
+void input (\begin{DoxyParamCaption}\item[{double \&}]{n}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a29266f8d8714aac5e6531a9a0cda23f4}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!input@{input}}
+\index{input@{input}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{input()}{input()}\hspace{0.1cm}{\footnotesize\ttfamily [4/9]}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a29266f8d8714aac5e6531a9a0cda23f4} 
+void input (\begin{DoxyParamCaption}\item[{float \&}]{n}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_adf9082c4490661654735942a0104c08c}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!input@{input}}
+\index{input@{input}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{input()}{input()}\hspace{0.1cm}{\footnotesize\ttfamily [5/9]}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_adf9082c4490661654735942a0104c08c} 
+void input (\begin{DoxyParamCaption}\item[{int \&}]{n}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_ad7d30b7b014f9679315d5dacd2b7ca33}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!input@{input}}
+\index{input@{input}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{input()}{input()}\hspace{0.1cm}{\footnotesize\ttfamily [6/9]}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_ad7d30b7b014f9679315d5dacd2b7ca33} 
+void input (\begin{DoxyParamCaption}\item[{long int \&}]{n}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a9feb8223c82f994e344445c096c57422}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!input@{input}}
+\index{input@{input}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{input()}{input()}\hspace{0.1cm}{\footnotesize\ttfamily [7/9]}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a9feb8223c82f994e344445c096c57422} 
+void input (\begin{DoxyParamCaption}\item[{string \&}]{s}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_ab24ab835ced675315a2a992b8dd78ad3}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!input@{input}}
+\index{input@{input}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{input()}{input()}\hspace{0.1cm}{\footnotesize\ttfamily [8/9]}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_ab24ab835ced675315a2a992b8dd78ad3} 
+template$<$typename T, size\+\_\+t N$>$ \\
+void input (\begin{DoxyParamCaption}\item[{T(\&)}]{arr}{\+[\+N]\+}\end{DoxyParamCaption})}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00306}{306}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_aefb7e6ceaebb920abc0989ef964ec0d6}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!input@{input}}
+\index{input@{input}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{input()}{input()}\hspace{0.1cm}{\footnotesize\ttfamily [9/9]}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_aefb7e6ceaebb920abc0989ef964ec0d6} 
+template$<$typename T$>$ \\
+void input (\begin{DoxyParamCaption}\item[{vector$<$ T $>$ \&}]{v}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00314}{314}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_adc6cdfda11b7ef4dfb0d4c8fe751e2c4}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!input\_bool@{input\_bool}}
+\index{input\_bool@{input\_bool}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{input\_bool()}{input\_bool()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_adc6cdfda11b7ef4dfb0d4c8fe751e2c4} 
+bool input\+\_\+bool (\begin{DoxyParamCaption}\item[{string}]{prompt}{ = {\ttfamily "{}"{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00281}{281}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the call graph for this function:\+
+% FIG 25
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a7c7c79caf7bf1cea5a1002d919b8e6d3}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!input\_double@{input\_double}}
+\index{input\_double@{input\_double}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{input\_double()}{input\_double()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a7c7c79caf7bf1cea5a1002d919b8e6d3} 
+double input\+\_\+double (\begin{DoxyParamCaption}\item[{string}]{prompt}{ = {\ttfamily "{}"{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00272}{272}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the call graph for this function:\+
+% FIG 26
+\Hypertarget{_e_a_s_y-_c_p_p_8h_abf50a15695daad0e24273449d4ec1503}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!input\_float@{input\_float}}
+\index{input\_float@{input\_float}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{input\_float()}{input\_float()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_abf50a15695daad0e24273449d4ec1503} 
+float input\+\_\+float (\begin{DoxyParamCaption}\item[{string}]{prompt}{ = {\ttfamily "{}"{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00263}{263}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the call graph for this function:\+
+% FIG 27
+\Hypertarget{_e_a_s_y-_c_p_p_8h_ab1a67023dc28bc1ff9e0ad9c5d3b4c5f}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!input\_int@{input\_int}}
+\index{input\_int@{input\_int}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{input\_int()}{input\_int()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_ab1a67023dc28bc1ff9e0ad9c5d3b4c5f} 
+int input\+\_\+int (\begin{DoxyParamCaption}\item[{string}]{prompt}{ = {\ttfamily "{}"{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00254}{254}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the call graph for this function:\+
+% FIG 28
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a88fc83dab7da305e1d16ab1d412a81df}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!input\_str@{input\_str}}
+\index{input\_str@{input\_str}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{input\_str()}{input\_str()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a88fc83dab7da305e1d16ab1d412a81df} 
+string input\+\_\+str (\begin{DoxyParamCaption}\item[{string}]{prompt}{ = {\ttfamily "{}"{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00246}{246}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the call graph for this function:\+
+% FIG 29
+\Hypertarget{_e_a_s_y-_c_p_p_8h_ad98b3f21ac2fea67a659b975313b799b}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!is\_even@{is\_even}}
+\index{is\_even@{is\_even}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{is\_even()}{is\_even()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_ad98b3f21ac2fea67a659b975313b799b} 
+bool is\+\_\+even (\begin{DoxyParamCaption}\item[{int}]{n}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [nodiscard]}, {\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00097}{97}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the caller graph for this function:\+
+% FIG 30
+\Hypertarget{_e_a_s_y-_c_p_p_8h_ad43073dc6c34d73be875781dee270dcc}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!is\_null@{is\_null}}
+\index{is\_null@{is\_null}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{is\_null()}{is\_null()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_ad43073dc6c34d73be875781dee270dcc} 
+template$<$typename T$>$ \\
+bool is\+\_\+null (\begin{DoxyParamCaption}\item[{const T \texorpdfstring{$\ast$}{*}}]{ptr}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [nodiscard]}, {\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00198}{198}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the call graph for this function:\+
+% FIG 31
+Here is the caller graph for this function:\+
+% FIG 32
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a9b5dc16d7a0f3627cd184a4928fc37e7}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!is\_odd@{is\_odd}}
+\index{is\_odd@{is\_odd}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{is\_odd()}{is\_odd()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a9b5dc16d7a0f3627cd184a4928fc37e7} 
+bool is\+\_\+odd (\begin{DoxyParamCaption}\item[{int}]{n}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [nodiscard]}, {\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00098}{98}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the call graph for this function:\+
+% FIG 33
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a38dc0e0e9b54d2def9d8eefffdb27d55}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!is\_prime@{is\_prime}}
+\index{is\_prime@{is\_prime}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{is\_prime()}{is\_prime()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a38dc0e0e9b54d2def9d8eefffdb27d55} 
+bool is\+\_\+prime (\begin{DoxyParamCaption}\item[{int}]{n}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}, {\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00735}{735}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a1ae5c4c41e044c304ec6237771eba903}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!join@{join}}
+\index{join@{join}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{join()}{join()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a1ae5c4c41e044c304ec6237771eba903} 
+string join (\begin{DoxyParamCaption}\item[{const vector$<$ string $>$ \&}]{vec}{, }\item[{string\+\_\+view}]{delimiter}{ = {\ttfamily "{}~"{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00514}{514}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a09ecf9a7361c55a14f20690710d7788b}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!lcm@{lcm}}
+\index{lcm@{lcm}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{lcm()}{lcm()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a09ecf9a7361c55a14f20690710d7788b} 
+int lcm (\begin{DoxyParamCaption}\item[{int}]{a}{, }\item[{int}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}, {\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00756}{756}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the call graph for this function:\+
+% FIG 34
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a8699f5c3a64d507706adb6f2f9eba6b2}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!lerp@{lerp}}
+\index{lerp@{lerp}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{lerp()}{lerp()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a8699f5c3a64d507706adb6f2f9eba6b2} 
+double lerp (\begin{DoxyParamCaption}\item[{double}]{a}{, }\item[{double}]{b}{, }\item[{double}]{t}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [nodiscard]}, {\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00093}{93}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a2e7eebd4d393d9cd24e5c5dacc4a44cf}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!log\_error@{log\_error}}
+\index{log\_error@{log\_error}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{log\_error()}{log\_error()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a2e7eebd4d393d9cd24e5c5dacc4a44cf} 
+void log\+\_\+error (\begin{DoxyParamCaption}\item[{const string \&}]{msg}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00662}{662}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the call graph for this function:\+
+% FIG 35
+Here is the caller graph for this function:\+
+% FIG 36
+\Hypertarget{_e_a_s_y-_c_p_p_8h_ad260d8f272c4b3e596884c636ef540d4}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!log\_info@{log\_info}}
+\index{log\_info@{log\_info}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{log\_info()}{log\_info()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_ad260d8f272c4b3e596884c636ef540d4} 
+void log\+\_\+info (\begin{DoxyParamCaption}\item[{const string \&}]{msg}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00660}{660}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the call graph for this function:\+
+% FIG 37
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a498b05ca0fb9bdcedf12d794302332ac}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!log\_warn@{log\_warn}}
+\index{log\_warn@{log\_warn}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{log\_warn()}{log\_warn()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a498b05ca0fb9bdcedf12d794302332ac} 
+void log\+\_\+warn (\begin{DoxyParamCaption}\item[{const string \&}]{msg}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00661}{661}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the call graph for this function:\+
+% FIG 38
+\Hypertarget{_e_a_s_y-_c_p_p_8h_ae7680c41fbc9a580f5c32e041298017f}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!ltrim@{ltrim}}
+\index{ltrim@{ltrim}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{ltrim()}{ltrim()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_ae7680c41fbc9a580f5c32e041298017f} 
+string ltrim (\begin{DoxyParamCaption}\item[{string\+\_\+view}]{str}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00492}{492}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_ac9235f20619c4e0af1050800edac9068}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!map\_contains@{map\_contains}}
+\index{map\_contains@{map\_contains}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{map\_contains()}{map\_contains()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_ac9235f20619c4e0af1050800edac9068} 
+template$<$typename K, typename V$>$ \\
+bool map\+\_\+contains (\begin{DoxyParamCaption}\item[{const map$<$ K, V $>$ \&}]{m}{, }\item[{const K \&}]{key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}, {\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00595}{595}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a8b23e25fd6de4b1e9533a84e285f3c57}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!map\_contains@{map\_contains}}
+\index{map\_contains@{map\_contains}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{map\_contains()}{map\_contains()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a8b23e25fd6de4b1e9533a84e285f3c57} 
+template$<$typename K, typename V$>$ \\
+bool map\+\_\+contains (\begin{DoxyParamCaption}\item[{const unordered\+\_\+map$<$ K, V $>$ \&}]{m}{, }\item[{const K \&}]{key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}, {\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00601}{601}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_ab2f6c57fae0d9f31f1d7b2828a0d11f6}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!max\_element@{max\_element}}
+\index{max\_element@{max\_element}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{max\_element()}{max\_element()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_ab2f6c57fae0d9f31f1d7b2828a0d11f6} 
+template$<$typename T$>$ \\
+T max\+\_\+element (\begin{DoxyParamCaption}\item[{const vector$<$ T $>$ \&}]{v}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00549}{549}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_accb9c3fa2f791053e66ebf6f70dc4835}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!max\_val@{max\_val}}
+\index{max\_val@{max\_val}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{max\_val()}{max\_val()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_accb9c3fa2f791053e66ebf6f70dc4835} 
+template$<$typename T$>$ \\
+T max\+\_\+val (\begin{DoxyParamCaption}\item[{T}]{a}{, }\item[{T}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [nodiscard]}, {\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00087}{87}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the caller graph for this function:\+
+% FIG 39
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a71530537e7cb34171551fc6d42787113}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!min\_element@{min\_element}}
+\index{min\_element@{min\_element}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{min\_element()}{min\_element()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a71530537e7cb34171551fc6d42787113} 
+template$<$typename T$>$ \\
+T min\+\_\+element (\begin{DoxyParamCaption}\item[{const vector$<$ T $>$ \&}]{v}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00555}{555}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_aa6e9187a2ef566cd6c7fee2b05b3c43c}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!min\_val@{min\_val}}
+\index{min\_val@{min\_val}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{min\_val()}{min\_val()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_aa6e9187a2ef566cd6c7fee2b05b3c43c} 
+template$<$typename T$>$ \\
+T min\+\_\+val (\begin{DoxyParamCaption}\item[{T}]{a}{, }\item[{T}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [nodiscard]}, {\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00086}{86}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the caller graph for this function:\+
+% FIG 40
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a7008f74a87f870f21a5d9f61bc5898cc}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!pause@{pause}}
+\index{pause@{pause}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{pause()}{pause()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a7008f74a87f870f21a5d9f61bc5898cc} 
+void pause (\begin{DoxyParamCaption}\item[{string}]{message}{ = {\ttfamily "{}Press~ENTER~to~continue..."{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00676}{676}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the call graph for this function:\+
+% FIG 41
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a10ce939972a0e32abb735bea5c16b862}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!pow\_val@{pow\_val}}
+\index{pow\_val@{pow\_val}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{pow\_val()}{pow\_val()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a10ce939972a0e32abb735bea5c16b862} 
+double pow\+\_\+val (\begin{DoxyParamCaption}\item[{double}]{base}{, }\item[{double}]{exp}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [nodiscard]}, {\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00090}{90}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a7b73d1c1793eadb1ca7efdc08dfe1369}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!print@{print}}
+\index{print@{print}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [1/11]}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a7b73d1c1793eadb1ca7efdc08dfe1369} 
+void print (\begin{DoxyParamCaption}\item[{bool}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00236}{236}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a70701c4e3d68d155fe1ffba1ac1eed61}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!print@{print}}
+\index{print@{print}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [2/11]}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a70701c4e3d68d155fe1ffba1ac1eed61} 
+void print (\begin{DoxyParamCaption}\item[{char}]{c}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00231}{231}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_ab8d5c5cd4eb5ba24e8272897a9b1f1a1}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!print@{print}}
+\index{print@{print}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [3/11]}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_ab8d5c5cd4eb5ba24e8272897a9b1f1a1} 
+template$<$typename... Args$>$ \\
+void print (\begin{DoxyParamCaption}\item[{const Args \&...}]{args}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00034}{34}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the caller graph for this function:\+
+% FIG 42
+\Hypertarget{_e_a_s_y-_c_p_p_8h_aba83a80ba0215e1e7258ef0f7893ca49}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!print@{print}}
+\index{print@{print}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [4/11]}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_aba83a80ba0215e1e7258ef0f7893ca49} 
+void print (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{s}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00230}{230}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_ab2f27a8e666205a595842eb3cde50810}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!print@{print}}
+\index{print@{print}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [5/11]}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_ab2f27a8e666205a595842eb3cde50810} 
+void print (\begin{DoxyParamCaption}\item[{const string \&}]{s}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00229}{229}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_ab478baeb6c9651e8cb2210e3b3db270a}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!print@{print}}
+\index{print@{print}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [6/11]}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_ab478baeb6c9651e8cb2210e3b3db270a} 
+template$<$typename T$>$ \\
+void print (\begin{DoxyParamCaption}\item[{const vector$<$ T $>$ \&}]{v}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00299}{299}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the call graph for this function:\+
+% FIG 43
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a413052ff5e130183d9c33588ff4c711a}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!print@{print}}
+\index{print@{print}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [7/11]}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a413052ff5e130183d9c33588ff4c711a} 
+void print (\begin{DoxyParamCaption}\item[{double}]{n}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00234}{234}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a782ae3c02709f782722b977fc66e3071}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!print@{print}}
+\index{print@{print}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [8/11]}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a782ae3c02709f782722b977fc66e3071} 
+void print (\begin{DoxyParamCaption}\item[{float}]{n}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00233}{233}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a28874128391e2e566ac1cbf39171975a}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!print@{print}}
+\index{print@{print}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [9/11]}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a28874128391e2e566ac1cbf39171975a} 
+void print (\begin{DoxyParamCaption}\item[{int}]{n}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00232}{232}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_adb8014af7a7356246a39161cdfa778a9}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!print@{print}}
+\index{print@{print}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [10/11]}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_adb8014af7a7356246a39161cdfa778a9} 
+void print (\begin{DoxyParamCaption}\item[{long int}]{n}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00235}{235}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_af9f796a241713d74342d848db426a810}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!print@{print}}
+\index{print@{print}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [11/11]}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_af9f796a241713d74342d848db426a810} 
+template$<$typename T, size\+\_\+t N$>$ \\
+void print (\begin{DoxyParamCaption}\item[{T(\&)}]{arr}{\+[\+N]\+}\end{DoxyParamCaption})}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00292}{292}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the call graph for this function:\+
+% FIG 44
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a7729c382f8982457b8de6107f78d1646}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!print\_map@{print\_map}}
+\index{print\_map@{print\_map}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{print\_map()}{print\_map()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a7729c382f8982457b8de6107f78d1646} 
+template$<$typename K, typename V$>$ \\
+void print\+\_\+map (\begin{DoxyParamCaption}\item[{const map$<$ K, V $>$ \&}]{m}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00607}{607}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the call graph for this function:\+
+% FIG 45
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a31705f4711d21e169e3b512c8a3a8547}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!print\_map@{print\_map}}
+\index{print\_map@{print\_map}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{print\_map()}{print\_map()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a31705f4711d21e169e3b512c8a3a8547} 
+template$<$typename K, typename V$>$ \\
+void print\+\_\+map (\begin{DoxyParamCaption}\item[{const unordered\+\_\+map$<$ K, V $>$ \&}]{m}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00614}{614}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the call graph for this function:\+
+% FIG 46
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a76551f62ac1a0d6195efc8f090f8ce49}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!print\_ptr@{print\_ptr}}
+\index{print\_ptr@{print\_ptr}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{print\_ptr()}{print\_ptr()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a76551f62ac1a0d6195efc8f090f8ce49} 
+template$<$typename T$>$ \\
+void print\+\_\+ptr (\begin{DoxyParamCaption}\item[{const T \texorpdfstring{$\ast$}{*}}]{ptr}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00712}{712}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the call graph for this function:\+
+% FIG 47
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a7f0b343405db7d1ad917da8e639fd9c4}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!println@{println}}
+\index{println@{println}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{println()}{println()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a7f0b343405db7d1ad917da8e639fd9c4} 
+template$<$typename... Args$>$ \\
+void println (\begin{DoxyParamCaption}\item[{const Args \&...}]{args}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00035}{35}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the caller graph for this function:\+
+% FIG 48
+\Hypertarget{_e_a_s_y-_c_p_p_8h_abe46ded282fcc301fa8932b30b2e3271}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!progress\_bar@{progress\_bar}}
+\index{progress\_bar@{progress\_bar}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{progress\_bar()}{progress\_bar()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_abe46ded282fcc301fa8932b30b2e3271} 
+void progress\+\_\+bar (\begin{DoxyParamCaption}\item[{int}]{progress}{, }\item[{int}]{total}{ = {\ttfamily 100}, }\item[{int}]{width}{ = {\ttfamily 50}}\end{DoxyParamCaption})}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00809}{809}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the call graph for this function:\+
+% FIG 49
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a0a985f79f6cc92b32e731a4bb4c67b1d}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!push\_unique@{push\_unique}}
+\index{push\_unique@{push\_unique}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{push\_unique()}{push\_unique()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a0a985f79f6cc92b32e731a4bb4c67b1d} 
+template$<$typename T$>$ \\
+void push\+\_\+unique (\begin{DoxyParamCaption}\item[{vector$<$ T $>$ \&}]{v}{, }\item[{const T \&}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00576}{576}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the call graph for this function:\+
+% FIG 50
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a6b1cfa1ac46812e4f61b018dd7a3cadc}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!random\_bool@{random\_bool}}
+\index{random\_bool@{random\_bool}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{random\_bool()}{random\_bool()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a6b1cfa1ac46812e4f61b018dd7a3cadc} 
+bool random\+\_\+bool (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}, {\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00708}{708}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the call graph for this function:\+
+% FIG 51
+\Hypertarget{_e_a_s_y-_c_p_p_8h_ae7cb8f9511628048a7f76102cc85771f}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!random\_double@{random\_double}}
+\index{random\_double@{random\_double}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{random\_double()}{random\_double()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_ae7cb8f9511628048a7f76102cc85771f} 
+double random\+\_\+double (\begin{DoxyParamCaption}\item[{double}]{min}{ = {\ttfamily 0.0}, }\item[{double}]{max}{ = {\ttfamily 1.0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}, {\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00702}{702}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a2749e313d5ad053da712694f6f3b4e63}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!random\_init@{random\_init}}
+\index{random\_init@{random\_init}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{random\_init()}{random\_init()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a2749e313d5ad053da712694f6f3b4e63} 
+void random\+\_\+init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00694}{694}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_ac05a86a224399b9df69f6faff2136ef8}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!random\_int@{random\_int}}
+\index{random\_int@{random\_int}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{random\_int()}{random\_int()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_ac05a86a224399b9df69f6faff2136ef8} 
+int random\+\_\+int (\begin{DoxyParamCaption}\item[{int}]{min}{, }\item[{int}]{max}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}, {\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00696}{696}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the caller graph for this function:\+
+% FIG 52
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a9dd83080ba331b25a43fe891e6e50ea4}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!read\_file@{read\_file}}
+\index{read\_file@{read\_file}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{read\_file()}{read\_file()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a9dd83080ba331b25a43fe891e6e50ea4} 
+void read\+\_\+file (\begin{DoxyParamCaption}\item[{string}]{filename}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00338}{338}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the call graph for this function:\+
+% FIG 53
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a1e1e5cddfd690b19971c6ea14f5973d7}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!read\_file\_as\_string@{read\_file\_as\_string}}
+\index{read\_file\_as\_string@{read\_file\_as\_string}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{read\_file\_as\_string()}{read\_file\_as\_string()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a1e1e5cddfd690b19971c6ea14f5973d7} 
+string read\+\_\+file\+\_\+as\+\_\+string (\begin{DoxyParamCaption}\item[{const string \&}]{filename}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00353}{353}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a23c95fa5e26e157f3c170f94f62966b4}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!read\_lines@{read\_lines}}
+\index{read\_lines@{read\_lines}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{read\_lines()}{read\_lines()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a23c95fa5e26e157f3c170f94f62966b4} 
+vector$<$ string $>$ read\+\_\+lines (\begin{DoxyParamCaption}\item[{const string \&}]{filename}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00367}{367}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a271477ad821cf725f7c5ea7968a8bdb7}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!repeat@{repeat}}
+\index{repeat@{repeat}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{repeat()}{repeat()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a271477ad821cf725f7c5ea7968a8bdb7} 
+string repeat (\begin{DoxyParamCaption}\item[{string\+\_\+view}]{str}{, }\item[{int}]{times}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00523}{523}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_aaf12d907de70adc24798f43e9635b669}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!replace@{replace}}
+\index{replace@{replace}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{replace()}{replace()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_aaf12d907de70adc24798f43e9635b669} 
+string replace (\begin{DoxyParamCaption}\item[{string\+\_\+view}]{str}{, }\item[{string\+\_\+view}]{from}{, }\item[{string\+\_\+view}]{to}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00454}{454}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the caller graph for this function:\+
+% FIG 54
+\Hypertarget{_e_a_s_y-_c_p_p_8h_aefb37d35e26e42a781cf247bbdcfd397}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!replace\_all@{replace\_all}}
+\index{replace\_all@{replace\_all}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{replace\_all()}{replace\_all()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_aefb37d35e26e42a781cf247bbdcfd397} 
+string replace\+\_\+all (\begin{DoxyParamCaption}\item[{string\+\_\+view}]{str}{, }\item[{string\+\_\+view}]{from}{, }\item[{string\+\_\+view}]{to}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00466}{466}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the call graph for this function:\+
+% FIG 55
+\Hypertarget{_e_a_s_y-_c_p_p_8h_ac2fd3fc1c862128651684f20c2c50242}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!reverse\_vec@{reverse\_vec}}
+\index{reverse\_vec@{reverse\_vec}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{reverse\_vec()}{reverse\_vec()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_ac2fd3fc1c862128651684f20c2c50242} 
+template$<$typename T$>$ \\
+void reverse\+\_\+vec (\begin{DoxyParamCaption}\item[{vector$<$ T $>$ \&}]{v}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00570}{570}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_af53bfcfdb0530c1d01adca1ccdc0e9a5}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!rtrim@{rtrim}}
+\index{rtrim@{rtrim}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{rtrim()}{rtrim()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_af53bfcfdb0530c1d01adca1ccdc0e9a5} 
+string rtrim (\begin{DoxyParamCaption}\item[{string\+\_\+view}]{str}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00498}{498}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a01cb172b400ce03924e5e84396aa8170}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!set\_env@{set\_env}}
+\index{set\_env@{set\_env}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{set\_env()}{set\_env()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a01cb172b400ce03924e5e84396aa8170} 
+void set\+\_\+env (\begin{DoxyParamCaption}\item[{const string \&}]{name}{, }\item[{const string \&}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00409}{409}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a1e9a9ddbac9fe5a683ac2abf7309e5c2}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!sleep\_ms@{sleep\_ms}}
+\index{sleep\_ms@{sleep\_ms}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{sleep\_ms()}{sleep\_ms()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a1e9a9ddbac9fe5a683ac2abf7309e5c2} 
+void sleep\+\_\+ms (\begin{DoxyParamCaption}\item[{int}]{ms}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00153}{153}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the call graph for this function:\+
+% FIG 56
+Here is the caller graph for this function:\+
+% FIG 57
+\Hypertarget{_e_a_s_y-_c_p_p_8h_ad8869fdfb01518a6afe3a8011998c513}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!sleep\_sec@{sleep\_sec}}
+\index{sleep\_sec@{sleep\_sec}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{sleep\_sec()}{sleep\_sec()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_ad8869fdfb01518a6afe3a8011998c513} 
+void sleep\+\_\+sec (\begin{DoxyParamCaption}\item[{int}]{sec}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00154}{154}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a19bdea2587b8651b29ea6d069a28a2de}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!sort\_vec@{sort\_vec}}
+\index{sort\_vec@{sort\_vec}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{sort\_vec()}{sort\_vec()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a19bdea2587b8651b29ea6d069a28a2de} 
+template$<$typename T$>$ \\
+void sort\+\_\+vec (\begin{DoxyParamCaption}\item[{vector$<$ T $>$ \&}]{v}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00567}{567}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_aa4dda9bff3cd366b4b50dc4bb1922294}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!split@{split}}
+\index{split@{split}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{split()}{split()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_aa4dda9bff3cd366b4b50dc4bb1922294} 
+vector$<$ string $>$ split (\begin{DoxyParamCaption}\item[{string\+\_\+view}]{str}{, }\item[{char}]{delimiter}{ = {\ttfamily \textquotesingle{}~\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00504}{504}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_abd8b55cf83a18e9ab8c4c4bd1527a3a2}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!sqrt\_val@{sqrt\_val}}
+\index{sqrt\_val@{sqrt\_val}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{sqrt\_val()}{sqrt\_val()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_abd8b55cf83a18e9ab8c4c4bd1527a3a2} 
+double sqrt\+\_\+val (\begin{DoxyParamCaption}\item[{double}]{x}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [nodiscard]}, {\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00091}{91}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a2a74ca8fd3b3fe322c422bbc9b83e283}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!starts\_with@{starts\_with}}
+\index{starts\_with@{starts\_with}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{starts\_with()}{starts\_with()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a2a74ca8fd3b3fe322c422bbc9b83e283} 
+bool starts\+\_\+with (\begin{DoxyParamCaption}\item[{string\+\_\+view}]{str}{, }\item[{string\+\_\+view}]{prefix}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}, {\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00438}{438}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_ab36dcd80f0ed4ba407e968543dfa6da5}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!sum@{sum}}
+\index{sum@{sum}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{sum()}{sum()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_ab36dcd80f0ed4ba407e968543dfa6da5} 
+template$<$typename T$>$ \\
+T sum (\begin{DoxyParamCaption}\item[{const vector$<$ T $>$ \&}]{v}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00535}{535}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the caller graph for this function:\+
+% FIG 58
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a062cc18aa0448213bb63eec7a07495c4}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!swap\_val@{swap\_val}}
+\index{swap\_val@{swap\_val}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{swap\_val()}{swap\_val()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a062cc18aa0448213bb63eec7a07495c4} 
+template$<$typename T$>$ \\
+void swap\+\_\+val (\begin{DoxyParamCaption}\item[{T \&}]{a}{, }\item[{T \&}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00207}{207}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a52cc95a96de93108f2d64e59b939a4df}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!timestamp\_ms@{timestamp\_ms}}
+\index{timestamp\_ms@{timestamp\_ms}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{timestamp\_ms()}{timestamp\_ms()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a52cc95a96de93108f2d64e59b939a4df} 
+long long timestamp\+\_\+ms (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}, {\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00639}{639}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_ad45d64fcb7713dce6b88d8cb59cf4567}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!to\_bool@{to\_bool}}
+\index{to\_bool@{to\_bool}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{to\_bool()}{to\_bool()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_ad45d64fcb7713dce6b88d8cb59cf4567} 
+bool to\+\_\+bool (\begin{DoxyParamCaption}\item[{string\+\_\+view}]{str}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00728}{728}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the call graph for this function:\+
+% FIG 59
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a1c2e432676ececa5a4af6452ba10eba6}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!to\_degrees@{to\_degrees}}
+\index{to\_degrees@{to\_degrees}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{to\_degrees()}{to\_degrees()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a1c2e432676ececa5a4af6452ba10eba6} 
+double to\+\_\+degrees (\begin{DoxyParamCaption}\item[{double}]{rad}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [nodiscard]}, {\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00103}{103}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a584c5050b0d9fa9f23fb3e4d6e9e6d32}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!to\_double@{to\_double}}
+\index{to\_double@{to\_double}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{to\_double()}{to\_double()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a584c5050b0d9fa9f23fb3e4d6e9e6d32} 
+double to\+\_\+double (\begin{DoxyParamCaption}\item[{string\+\_\+view}]{str}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00727}{727}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_aa12df8fe53bba1068c9822bfb95eb2ef}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!to\_int@{to\_int}}
+\index{to\_int@{to\_int}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{to\_int()}{to\_int()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_aa12df8fe53bba1068c9822bfb95eb2ef} 
+int to\+\_\+int (\begin{DoxyParamCaption}\item[{string\+\_\+view}]{str}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00726}{726}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_abfb177ce1196f388fbf2eed6e5b5bd87}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!to\_lower@{to\_lower}}
+\index{to\_lower@{to\_lower}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{to\_lower()}{to\_lower()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_abfb177ce1196f388fbf2eed6e5b5bd87} 
+char to\+\_\+lower (\begin{DoxyParamCaption}\item[{char}]{c}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [nodiscard]}, {\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00030}{30}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the caller graph for this function:\+
+% FIG 60
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a175c09f4dd01c8ae3f1ef6392a8f865a}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!to\_lower@{to\_lower}}
+\index{to\_lower@{to\_lower}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{to\_lower()}{to\_lower()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a175c09f4dd01c8ae3f1ef6392a8f865a} 
+string to\+\_\+lower (\begin{DoxyParamCaption}\item[{string}]{str}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00223}{223}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the call graph for this function:\+
+% FIG 61
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a8c0a83e824fee7331c14b8588abfb1d1}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!to\_radians@{to\_radians}}
+\index{to\_radians@{to\_radians}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{to\_radians()}{to\_radians()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a8c0a83e824fee7331c14b8588abfb1d1} 
+double to\+\_\+radians (\begin{DoxyParamCaption}\item[{double}]{deg}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [nodiscard]}, {\ttfamily [noexcept]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00102}{102}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a7cf375d11a1919b85dcfe51d9693d88f}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!to\_str@{to\_str}}
+\index{to\_str@{to\_str}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{to\_str()}{to\_str()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a7cf375d11a1919b85dcfe51d9693d88f} 
+template$<$typename T$>$ \\
+string to\+\_\+str (\begin{DoxyParamCaption}\item[{const T \&}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00719}{719}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a3a298aea409b5d7355c3c0e53ba0e628}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!to\_upper@{to\_upper}}
+\index{to\_upper@{to\_upper}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{to\_upper()}{to\_upper()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a3a298aea409b5d7355c3c0e53ba0e628} 
+string to\+\_\+upper (\begin{DoxyParamCaption}\item[{string}]{str}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00471}{471}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_af2426daf17040a8668703514a3c9f8a8}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!trim@{trim}}
+\index{trim@{trim}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{trim()}{trim()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_af2426daf17040a8668703514a3c9f8a8} 
+string trim (\begin{DoxyParamCaption}\item[{string\+\_\+view}]{str}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00484}{484}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_ac8ce7435741c7ea01dfede51925f070e}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!write\_file@{write\_file}}
+\index{write\_file@{write\_file}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{write\_file()}{write\_file()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_ac8ce7435741c7ea01dfede51925f070e} 
+void write\+\_\+file (\begin{DoxyParamCaption}\item[{string}]{filename}{, }\item[{string}]{mode}{ = {\ttfamily "{}out"{}}}\end{DoxyParamCaption})}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00322}{322}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+Here is the call graph for this function:\+
+% FIG 62
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a13f1b552cdfac90d6d3d5128e5ef08b0}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!write\_lines@{write\_lines}}
+\index{write\_lines@{write\_lines}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{write\_lines()}{write\_lines()}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a13f1b552cdfac90d6d3d5128e5ef08b0} 
+void write\+\_\+lines (\begin{DoxyParamCaption}\item[{const string \&}]{filename}{, }\item[{const vector$<$ string $>$ \&}]{lines}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00360}{360}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+
+
+\label{doc-var-members}
+\Hypertarget{_e_a_s_y-_c_p_p_8h_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{_e_a_s_y-_c_p_p_8h_acea65c39dac8dcaadc5ee2c8b1219463}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!E@{E}}
+\index{E@{E}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{E}{E}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_acea65c39dac8dcaadc5ee2c8b1219463} 
+double E = 2.\+718281828459045\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00101}{101}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
+\Hypertarget{_e_a_s_y-_c_p_p_8h_a299aabc5fc8285cbf99025330a3d0d0d}\index{EASY-\/CPP.h@{EASY-\/CPP.h}!PI@{PI}}
+\index{PI@{PI}!EASY-\/CPP.h@{EASY-\/CPP.h}}
+\doxysubsubsection{\texorpdfstring{PI}{PI}}
+{\footnotesize\ttfamily \label{_e_a_s_y-_c_p_p_8h_a299aabc5fc8285cbf99025330a3d0d0d} 
+double PI = 3.\+141592653589793\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source_l00100}{100}} of file \doxymbox{\hyperlink{_e_a_s_y-_c_p_p_8h_source}{EASY-\/\+CPP.\+h}}.
+
