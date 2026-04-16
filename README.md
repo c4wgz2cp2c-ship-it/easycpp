@@ -53,35 +53,28 @@ int main() {
     return 0;
 }
 
+```
 
+## 🔧 How to Use
 
-🔧 How to Use
-
-Download EASY-CPP.h.
-
-Place it in your project folder.
-
-Add #include "EASY-CPP.h" to your code.
-
-Compile with a C++17 (or later) compiler.
-
-That's it. No library linking, no CMake hassle.
+- Download EASY-CPP.h.
+- Place it in your project folder.
+- Add #include "EASY-CPP.h" to your code.
+- Compile with a C++17 (or later) compiler.
+- That's it. No library linking, no CMake hassle.
 
 
 
-🧪 Testing
+## 🧪 Testing
 
-EasyCPP includes a complete test suite that validates all 250+ utilities.
-
-Quick Test (Windows)
-Navigate to the test/ folder.
-
-Double‑click run_test.bat.
-
-The script compiles and runs the tests, showing a green [PASS] for each successful check.
+- EasyCPP includes a complete test suite that validates all 250+ utilities.
+- Quick Test (Windows)
+- Navigate to the test/ folder.
+- Double‑click run_test.bat.
+- The script compiles and runs the tests, showing a green [PASS] for each successful check.
 
 
 
-📄 License
-This project is licensed under the MIT License – see the LICENSE file for details.
-TL;DR: Do whatever you want, just keep the copyright notice.
+## 📄 License
+- This project is licensed under the MIT License – see the LICENSE file for details.
+- TL;DR: Do whatever you want, just keep the copyright notice.
