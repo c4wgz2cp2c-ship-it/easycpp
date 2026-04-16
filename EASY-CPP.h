@@ -98,7 +98,7 @@ void set_env(const string& name, const string& value);
 // ====================== MATH ======================
 template<typename T> [[nodiscard]] inline T min_val(T a, T b) noexcept { return a < b ? a : b; }
 template<typename T> [[nodiscard]] inline T max_val(T a, T b) noexcept { return a > b ? a : b; }
-template<typename T> [[nodiscard]] inline T clamp(T val, T minv, T maxv) noexcept { return max_val(minv, min_val(maxv, val)); }
+template<typename T> [[nodiscard]] inline T clamp_val(T val, T minv, T maxv) noexcept { return max_val(minv, min_val(maxv, val)); }
 
 [[nodiscard]] inline double pow_val(double base, double exp) noexcept { return pow(base, exp); }
 [[nodiscard]] inline double sqrt_val(double x) noexcept { return sqrt(x); }
@@ -671,6 +671,14 @@ bool contains(string_view str, string_view substr) noexcept { return str.find(su
 
 string replace(string_view str, string_view from, string_view to) {
     string result(str);
+    size_t pos = result.find(from);
+    if (pos != string::npos) {
+        result.replace(pos, from.length(), to);
+    }
+    return result;
+}
+string replace_all(string_view str, string_view from, string_view to) {
+    string result(str);
     size_t pos = 0;
     while ((pos = result.find(from, pos)) != string::npos) {
         result.replace(pos, from.length(), to);
@@ -678,7 +686,6 @@ string replace(string_view str, string_view from, string_view to) {
     }
     return result;
 }
-string replace_all(string_view str, string_view from, string_view to) { return replace(str, from, to); }
 
 string to_upper(string str) {
     for (char& c : str) if (c >= 'a' && c <= 'z') c -= 32;
