@@ -46,19 +46,9 @@ int main() {
     println("Multiple args: ", 42, " ", 3.14, " ", 'A', " ", true);
 
     // -------------------------------------------------------------
-    // 2. Input (interactive – comment out for automated testing)
+    // 2. String Utilities
     // -------------------------------------------------------------
-    /*
-    TEST("2. Input (interactive)");
-    string name = input_str("Enter your name: ");
-    int age = input_int("Enter your age: ");
-    println("Hello ", name, ", you are ", age, " years old.");
-    */
-
-    // -------------------------------------------------------------
-    // 3. String Utilities
-    // -------------------------------------------------------------
-    TEST("3. String Utilities");
+    TEST("2. String Utilities");
     string s = "  Hello EasyCPP!  ";
     CHECK(to_lower("HELLO") == "hello", "to_lower works");
     CHECK(to_upper("hello") == "HELLO", "to_upper works");
@@ -85,9 +75,9 @@ int main() {
     CHECK(lines.size() == 3, "split_lines works");
 
     // -------------------------------------------------------------
-    // 4. Vector Utilities
+    // 3. Vector Utilities
     // -------------------------------------------------------------
-    TEST("4. Vector Utilities");
+    TEST("3. Vector Utilities");
     vector<int> v = {5, 2, 8, 2, 9, 1};
     CHECK(sum(v) == 27, "sum works");
     CHECK(abs(average(v) - 4.5) < 0.001, "average works");
@@ -118,9 +108,9 @@ int main() {
     CHECK(v2[0] == 2 && v2[1] == 4 && v2[2] == 6, "for_each_vec works");
 
     // -------------------------------------------------------------
-    // 5. Sorting Algorithms
+    // 4. Sorting Algorithms
     // -------------------------------------------------------------
-    TEST("5. Sorting Algorithms");
+    TEST("4. Sorting Algorithms");
     vector<int> nums = {64, 34, 25, 12, 22, 11, 90};
 
     vector<int> copy = nums;
@@ -140,9 +130,9 @@ int main() {
     CHECK(copy[0] == 11 && copy.back() == 90, "quick_sort works");
 
     // -------------------------------------------------------------
-    // 6. Search Algorithms
+    // 5. Search Algorithms
     // -------------------------------------------------------------
-    TEST("6. Search Algorithms");
+    TEST("5. Search Algorithms");
     vector<int> haystack = {10, 20, 30, 40, 50};
     CHECK(linear_search(haystack, 30) == 2, "linear_search found");
     CHECK(linear_search(haystack, 99) == -1, "linear_search not found");
@@ -150,11 +140,10 @@ int main() {
     CHECK(binary_search(haystack, 99) == -1, "binary_search not found");
 
     // -------------------------------------------------------------
-    // 7. Data Structures
+    // 6. Data Structures
     // -------------------------------------------------------------
-    TEST("7. Data Structures");
+    TEST("6. Data Structures");
 
-    // Stack
     Stack<int> stk;
     stk.push(10); stk.push(20); stk.push(30);
     CHECK(stk.top() == 30, "Stack top works");
@@ -163,7 +152,6 @@ int main() {
     CHECK(stk.size() == 2, "Stack size works");
     CHECK(!stk.empty(), "Stack not empty");
 
-    // Queue
     Queue<string> q;
     q.enqueue("first"); q.enqueue("second");
     CHECK(q.front() == "first", "Queue front works");
@@ -171,7 +159,6 @@ int main() {
     CHECK(q.front() == "second", "Queue dequeue works");
     CHECK(q.size() == 1, "Queue size works");
 
-    // LinkedList
     LinkedList<int> ll;
     ll.push_back(1); ll.push_back(2); ll.push_front(0);
     CHECK(ll.size() == 3, "LinkedList size works");
@@ -180,10 +167,10 @@ int main() {
     CHECK(ll.contains(0) == false, "LinkedList pop_front works");
 
     // -------------------------------------------------------------
-    // 8. Math & Statistics
+    // 7. Math & Statistics
     // -------------------------------------------------------------
-    TEST("8. Math & Statistics");
-    CHECK(clamp_val(15, 0, 10) == 10, "clamp works");
+    TEST("7. Math & Statistics");
+    CHECK(clamp_val(15, 0, 10) == 10, "clamp_val works");
     CHECK(abs(lerp(0.0, 10.0, 0.5) - 5.0) < 0.001, "lerp works");
     CHECK(factorial(5) == 120, "factorial works");
     CHECK(fibonacci(6) == 8, "fibonacci works");
@@ -204,9 +191,9 @@ int main() {
     CHECK(nPr(5, 2) == 20, "nPr works");
 
     // -------------------------------------------------------------
-    // 9. Time & Date
+    // 8. Time & Date
     // -------------------------------------------------------------
-    TEST("9. Time & Date");
+    TEST("8. Time & Date");
     println("Current time: ", current_time());
     println("Current date: ", current_date());
     println("DateTime: ", datetime_str());
@@ -222,9 +209,9 @@ int main() {
     CHECK(sw.elapsed_seconds() >= 1.0, "sleep_sec & Stopwatch work");
 
     // -------------------------------------------------------------
-    // 10. Random
+    // 9. Random
     // -------------------------------------------------------------
-    TEST("10. Random");
+    TEST("9. Random");
     int rnd = random_int(1, 100);
     CHECK(rnd >= 1 && rnd <= 100, "random_int works");
     double rndd = random_double(0.0, 1.0);
@@ -233,9 +220,9 @@ int main() {
     CHECK(rndb == true || rndb == false, "random_bool works");
 
     // -------------------------------------------------------------
-    // 11. Logging & Debug
+    // 10. Logging & Debug
     // -------------------------------------------------------------
-    TEST("11. Logging & Debug");
+    TEST("10. Logging & Debug");
     debug("This is a debug message");
     log_info("This is an info message");
     log_warn("This is a warning");
@@ -243,9 +230,9 @@ int main() {
     assert_true(1 == 1, "This should not exit");
 
     // -------------------------------------------------------------
-    // 12. CSV & Tables
+    // 11. CSV & Tables
     // -------------------------------------------------------------
-    TEST("12. CSV & Tables");
+    TEST("11. CSV & Tables");
     vector<vector<string>> csv_data = {{"Name","Age"}, {"Alice","30"}, {"Bob","25"}};
     write_csv("test_people.csv", csv_data);
     auto read_back = read_csv("test_people.csv");
@@ -254,9 +241,9 @@ int main() {
     print_table(csv_data);
 
     // -------------------------------------------------------------
-    // 13. File System
+    // 12. File System
     // -------------------------------------------------------------
-    TEST("13. File System");
+    TEST("12. File System");
     CHECK(file_exists("test_people.csv") == true, "file_exists works");
     CHECK(is_file("test_people.csv") == true, "is_file works");
     CHECK(is_directory(".") == true, "is_directory works (current dir)");
@@ -272,9 +259,9 @@ int main() {
     remove_file("test_people.csv");
 
     // -------------------------------------------------------------
-    // 14. Geometry 2D
+    // 13. Geometry 2D
     // -------------------------------------------------------------
-    TEST("14. Geometry 2D");
+    TEST("13. Geometry 2D");
     Point p1{0,0}, p2{3,4};
     CHECK(abs(distance(p1, p2) - 5.0) < 0.001, "distance works");
     Line line{p1, p2};
@@ -284,9 +271,9 @@ int main() {
     CHECK(abs(circumference(c) - 31.4159) < 0.1, "circumference works");
 
     // -------------------------------------------------------------
-    // 15. Encoding & Hashing
+    // 14. Encoding & Hashing
     // -------------------------------------------------------------
-    TEST("15. Encoding & Hashing");
+    TEST("14. Encoding & Hashing");
     string original = "Hello EasyCPP!";
     string enc = base64_encode(original);
     string dec = base64_decode(enc);
@@ -305,9 +292,9 @@ int main() {
     CHECK(h != 0, "hash_str works");
 
     // -------------------------------------------------------------
-    // 16. Bit Operations
+    // 15. Bit Operations
     // -------------------------------------------------------------
-    TEST("16. Bit Operations");
+    TEST("15. Bit Operations");
     unsigned int bits = 0b1010;
     CHECK(get_bit(bits, 1) == true, "get_bit works");
     bits = set_bit(bits, 2);
@@ -319,9 +306,9 @@ int main() {
     CHECK(count_bits(0b1101) == 3, "count_bits works");
 
     // -------------------------------------------------------------
-    // 17. Sequence Generators
+    // 16. Sequence Generators
     // -------------------------------------------------------------
-    TEST("17. Sequence Generators");
+    TEST("16. Sequence Generators");
     vector<int> r1 = range(5);
     CHECK(r1.size() == 5 && r1[0] == 0 && r1[4] == 4, "range(stop) works");
     vector<int> r2 = range(2, 10, 2);
@@ -336,9 +323,9 @@ int main() {
     print_enumerate(fruits);
 
     // -------------------------------------------------------------
-    // 18. Progress Bars (visual)
+    // 17. Progress Bars (visual)
     // -------------------------------------------------------------
-    TEST("18. Progress Bars (visual)");
+    TEST("17. Progress Bars (visual)");
     println("Single progress bar (simulated):");
     for (int i = 0; i <= 100; i += 10) {
         progress_bar(i, 100, 30);
@@ -356,18 +343,18 @@ int main() {
     println("\n\n");
 
     // -------------------------------------------------------------
-    // 19. Testing Framework
+    // 18. Testing Framework
     // -------------------------------------------------------------
-    TEST("19. Testing Framework (TestSuite)");
+    TEST("18. Testing Framework (TestSuite)");
     TestSuite suite("EasyCPP Self Test");
     suite.assert_true(true, "True is true");
     suite.assert_eq(42, 42, "42 equals 42");
     suite.assert_eq(string("hello"), string("hello"), "strings match");
 
     // -------------------------------------------------------------
-    // 20. System & Environment
+    // 19. System & Environment
     // -------------------------------------------------------------
-    TEST("20. System & Environment");
+    TEST("19. System & Environment");
     println("OS: ", get_os());
     string path = get_env("PATH");
     CHECK(!path.empty(), "get_env PATH works");
