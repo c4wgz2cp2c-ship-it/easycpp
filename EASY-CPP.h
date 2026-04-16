@@ -1135,3 +1135,4 @@ TestSuite::~TestSuite() {
     println(failed, " failed.");
     color_reset();
 }
+
