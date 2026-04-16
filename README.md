@@ -3,13 +3,14 @@
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Standard: C++17](https://img.shields.io/badge/C%2B%2B-17-blue.svg)
 ![Status: Active](https://img.shields.io/badge/status-active-brightgreen.svg)
+[![Test Status](https://img.shields.io/badge/tests-100%25%20passed-brightgreen)](https://github.com/c4wgz2cp2c-ship-it/easycpp)
 
 **250+ Python-like utility functions for modern C++.**  
 Stop writing the same boilerplate over and over. `easycpp.h` is a **single-header library** that brings the simplicity of Python to C++ without sacrificing performance.
 
 ## ✨ Why EasyCPP?
 
-- **Single Header:** Just drop `easycpp.h` into your project and `#include` it.
+- **Single Header:** Just drop `EASY-CPP.h` into your project and `#include` it.
 - **No Dependencies:** Uses only the C++ Standard Library.
 - **Zero Overhead:** `constexpr`, `noexcept`, and `[[nodiscard]]` everywhere.
 - **Rich Feature Set:** From basic I/O to advanced sorting, data structures, CSV handling, and geometry.
@@ -18,7 +19,7 @@ Stop writing the same boilerplate over and over. `easycpp.h` is a **single-heade
 ## 🚀 Quick Example
 
 ```cpp
-#include "easycpp.h"
+#include "EASY-CPP.h"
 using namespace std;
 
 int main() {
@@ -51,3 +52,36 @@ int main() {
 
     return 0;
 }
+
+
+
+🔧 How to Use
+
+Download EASY-CPP.h.
+
+Place it in your project folder.
+
+Add #include "EASY-CPP.h" to your code.
+
+Compile with a C++17 (or later) compiler.
+
+That's it. No library linking, no CMake hassle.
+
+
+
+🧪 Testing
+
+EasyCPP includes a complete test suite that validates all 250+ utilities.
+
+Quick Test (Windows)
+Navigate to the test/ folder.
+
+Double‑click run_test.bat.
+
+The script compiles and runs the tests, showing a green [PASS] for each successful check.
+
+
+
+📄 License
+This project is licensed under the MIT License – see the LICENSE file for details.
+TL;DR: Do whatever you want, just keep the copyright notice.
